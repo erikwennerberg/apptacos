@@ -1,0 +1,433 @@
+{
+  "controllerUrl" : "http://appdynamicscontrol-sneumannhybris-q0nuxhkm.srv.ravcloud.com:8090",
+  "applicationId" : 9,
+  "tierId" : null,
+  "user" : "admin",
+  "createdDate" : [ "java.util.Date", 1522069767745 ],
+  "entityType" : "browser-eum-config",
+  "entities" : [ "java.util.ArrayList", [ [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 2,
+    "version" : 0,
+    "name" : "Javascript Agent Configuration",
+    "nameUnique" : true,
+    "type" : "JS_AGENT_CONFIG",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.InstrumentationConfigData", {
+      "enableXssc" : false,
+      "hostOption" : 0,
+      "jsAgentUrlHttp" : "cdn.appdynamics.com",
+      "jsAgentUrlHttps" : "cdn.appdynamics.com",
+      "geoUrlHttp" : null,
+      "geoUrlHttps" : null,
+      "customConfig" : null,
+      "codeSnippet" : "<script charset='UTF-8'>\nwindow['adrum-start-time'] = new Date().getTime();\n(function(config){\n    config.appKey = 'EUM-AAB-AUM';\n    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';\n    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';\n    config.beaconUrlHttp = 'http://eum-server:7001';\n    config.beaconUrlHttps = 'https://eum-server:7002';\n    config.xd = {enable : false};\n})(window['adrum-config'] || (window['adrum-config'] = {}));\nif ('https:' === document.location.protocol) {\n    document.write(unescape('%3Cscript')\n + \" src='https://cdn.appdynamics.com/adrum/adrum-4.4.2.452.js' \"\n + \" type='text/javascript' charset='UTF-8'\" \n + unescape('%3E%3C/script%3E'));\n} else {\n    document.write(unescape('%3Cscript')\n + \" src='http://cdn.appdynamics.com/adrum/adrum-4.4.2.452.js' \"\n + \" type='text/javascript' charset='UTF-8'\" \n + unescape('%3E%3C/script%3E'));\n}\n</script>\n",
+      "beaconUrlHttp" : "eum-server:7001",
+      "beaconUrlHttps" : "eum-server:7002"
+    } ]
+  } ], [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 3,
+    "version" : 0,
+    "name" : "Instrumentation - Base Page & iFrames",
+    "nameUnique" : true,
+    "type" : "INSTR_BASE_PAGE_IFRAME",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.PagesIFramesConfigData", {
+      "customNamingIncludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Save Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 0,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "/save/"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Checkout - Add Payment Method Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 1,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "payment-method/add"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Checkout - Add Delivery Address Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "delivery-address/add"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Checkout - Summary View Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "summary/view"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Order Confirmation Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 4,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "/orderConfirmation/"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Cart Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 5,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "/cart"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Login Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 6,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "/login/"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Category Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 7,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "/c/"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Product Page",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : null,
+          "value" : null
+        } ],
+        "enabled" : true,
+        "priority" : 8,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "CONTAINS",
+          "value" : "/p/"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : null,
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2147483647,
+        "matchOnURL" : null,
+        "isDefault" : true,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : true,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : "SEGMENT_NUMBERS",
+          "anchorType" : null,
+          "urlMatchSegments" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.URLMatchSegmentConfig", {
+            "firstNSegments" : 0,
+            "lastNSegments" : 0,
+            "segmentNumbers" : [ 3, 4 ]
+          } ],
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : null
+        } ]
+      } ] ] ],
+      "customNamingExcludeRules" : [ "java.util.ArrayList", [ ] ]
+    } ]
+  } ], [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 4,
+    "version" : 0,
+    "name" : "Instrumentation - AJAX",
+    "nameUnique" : true,
+    "type" : "INSTR_AJAX",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.AJAXConfigData", {
+      "customNamingIncludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : null,
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2147483647,
+        "matchOnURL" : null,
+        "isDefault" : true,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : true,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : "SEGMENT_NUMBERS",
+          "anchorType" : null,
+          "urlMatchSegments" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.URLMatchSegmentConfig", {
+            "firstNSegments" : 0,
+            "lastNSegments" : 0,
+            "segmentNumbers" : [ 3, 4 ]
+          } ],
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : null,
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ] ] ],
+      "customNamingExcludeRules" : [ "java.util.ArrayList", [ ] ],
+      "eventServiceIncludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.EventServiceIncludeRule", {
+        "name" : "Catch All",
+        "matchOnMobileApplicationName" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : null,
+          "value" : null,
+          "httpMethods" : null
+        } ],
+        "enabled" : true,
+        "priority" : 0,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "NOT_EMPTY",
+          "value" : "",
+          "httpMethods" : null
+        } ],
+        "matchBy" : "URL",
+        "samplePercentage" : 100
+      } ] ] ],
+      "eventServiceExcludeRules" : [ "java.util.ArrayList", [ ] ]
+    } ]
+  } ], [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 5,
+    "version" : 0,
+    "name" : "Instrumentation - Virtual Pages",
+    "nameUnique" : true,
+    "type" : "INSTR_VIRT_PAGES",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.VirtualPagesConfigData", {
+      "customNamingIncludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : null,
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2147483647,
+        "matchOnURL" : null,
+        "isDefault" : true,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.VirtualPageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : "FIRST_N_SEGMENTS",
+          "anchorType" : "FIRST_N_SEGMENTS",
+          "urlMatchSegments" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.URLMatchSegmentConfig", {
+            "firstNSegments" : 1,
+            "lastNSegments" : 0,
+            "segmentNumbers" : null
+          } ],
+          "anchorMatchSegments" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.URLMatchSegmentConfig", {
+            "firstNSegments" : 2,
+            "lastNSegments" : 0,
+            "segmentNumbers" : null
+          } ],
+          "regexGroupConfig" : null,
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ] ] ],
+      "customNamingExcludeRules" : [ "java.util.ArrayList", [ ] ]
+    } ]
+  } ], [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 6,
+    "version" : 0,
+    "name" : "Instrumentation - Errors",
+    "nameUnique" : true,
+    "type" : "INSTR_ERRORS",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.ErrorDetectionConfigData", {
+      "javaScriptErrorCaptureEnabled" : true,
+      "ajaxRequestErrorCaptureEnabled" : true,
+      "ignoreJavaScriptErrorConfigRules" : null,
+      "ignorePageNames" : null,
+      "ignoreUrls" : null
+    } ]
+  } ], [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 7,
+    "version" : 0,
+    "name" : "Instrumentation - Settings",
+    "nameUnique" : true,
+    "type" : "INSTR_SETTINGS",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.BrowserSettingsConfigData", {
+      "thresholds" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ThresholdsConfigData", {
+        "slowThreshold" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ThresholdsMetric", {
+          "type" : "STANDARD_DEVIATION",
+          "value" : 3
+        } ],
+        "verySlowThreshold" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ThresholdsMetric", {
+          "type" : "STANDARD_DEVIATION",
+          "value" : 4
+        } ],
+        "stallThreshold" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ThresholdsMetric", {
+          "type" : "STATIC_MS",
+          "value" : 45000
+        } ]
+      } ],
+      "percentileMetrics" : [ 50.0, 90.0, 95.0, 99.0 ],
+      "sessionsMonitor" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.SessionConfigData", {
+        "sessionTimeoutMins" : 5
+      } ],
+      "ipAddressDisplayed" : true,
+      "eventPolicy" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.EventPolicyConfigData", {
+        "enableSlowSnapshotCollection" : true,
+        "enablePeriodicSnapshotCollection" : true,
+        "enableErrorSnapshotCollection" : true
+      } ]
+    } ]
+  } ] ] ],
+  "metatdata" : null
+}

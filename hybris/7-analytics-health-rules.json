@@ -1,0 +1,866 @@
+{
+  "controllerUrl" : "http://appdynamicscontrol-sneumannhybris-q0nuxhkm.srv.ravcloud.com:8090",
+  "applicationId" : 2,
+  "tierId" : null,
+  "user" : "admin",
+  "createdDate" : [ "java.util.Date", 1522937360128 ],
+  "entityType" : "health-rules",
+  "entities" : [ "java.util.ArrayList", [ [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 45,
+    "version" : 3,
+    "name" : "SAP Hybris - Revenue Metric is ab-normal",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.OtherAffectedEntityMatchCriteria", {
+      "id" : 96,
+      "version" : 0,
+      "aemcType" : "OTHER_AFFECTED_EMC",
+      "componentIds" : null,
+      "componentMatchCriteria" : null,
+      "missingEntities" : null,
+      "affectedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 2,
+        "prettyToString" : null
+      } ],
+      "cacheKey" : "otheraemc:-ae:APPLICATION,2"
+    } ],
+    "type" : "OTHER",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 127,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 191,
+        "version" : 1,
+        "type" : "POLICY_LEAF_CONDITION",
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "type" : "LEAF_METRIC_EXPRESSION",
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "ABSOLUTE_METRIC_SCOPE",
+            "logicalMetricName" : "Analytics|SAP Hybris - Revenue",
+            "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+              "id" : 0,
+              "version" : 0,
+              "entityType" : "APPLICATION",
+              "entityId" : 2,
+              "prettyToString" : null
+            } ],
+            "metricId" : 91437
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "inputMetricText" : false,
+          "inputMetricPath" : null,
+          "literalValueExpression" : false,
+          "value" : 0,
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Revenue', scope=Type:APPLICATION, id:2, metricId=91437}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+        } ],
+        "operator" : "NOT_EQUALS",
+        "value" : 3.0,
+        "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+        "useActiveBaseline" : true,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "condition 1",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 2,
+          "prettyToString" : null
+        } ] ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
+          "id" : 91437,
+          "version" : 0,
+          "name" : "SAP Hybris - Revenue",
+          "nameUnique" : true,
+          "applicationId" : 2,
+          "fullyQualifiedName" : "Analytics|SAP Hybris - Revenue",
+          "virtual" : false,
+          "agentType" : "APP_AGENT",
+          "timeRollupType" : "SUM",
+          "clusterRollupType" : "INDIVIDUAL",
+          "holeHandlingType" : "REGULAR_COUNTER",
+          "childMetrics" : null,
+          "accountWideMetricId" : 0
+        } ] ] ],
+        "triggerOnNoData" : false
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "ANY",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 128,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 192,
+        "version" : 1,
+        "type" : "POLICY_LEAF_CONDITION",
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "type" : "LEAF_METRIC_EXPRESSION",
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "ABSOLUTE_METRIC_SCOPE",
+            "logicalMetricName" : "Analytics|SAP Hybris - Revenue",
+            "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+              "id" : 0,
+              "version" : 0,
+              "entityType" : "APPLICATION",
+              "entityId" : 2,
+              "prettyToString" : null
+            } ],
+            "metricId" : 91437
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "inputMetricText" : false,
+          "inputMetricPath" : null,
+          "literalValueExpression" : false,
+          "value" : 0,
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Revenue', scope=Type:APPLICATION, id:2, metricId=91437}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+        } ],
+        "operator" : "NOT_EQUALS",
+        "value" : 2.0,
+        "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+        "useActiveBaseline" : true,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "condition 1",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 2,
+          "prettyToString" : null
+        } ] ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
+          "id" : 91437,
+          "version" : 0,
+          "name" : "SAP Hybris - Revenue",
+          "nameUnique" : true,
+          "applicationId" : 2,
+          "fullyQualifiedName" : "Analytics|SAP Hybris - Revenue",
+          "virtual" : false,
+          "agentType" : "APP_AGENT",
+          "timeRollupType" : "SUM",
+          "clusterRollupType" : "INDIVIDUAL",
+          "holeHandlingType" : "REGULAR_COUNTER",
+          "childMetrics" : null,
+          "accountWideMetricId" : 0
+        } ] ] ],
+        "triggerOnNoData" : false
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "ANY",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : false,
+    "createdBy" : [ "com.singularity.ee.controller.api.dto.Identity", {
+      "id" : 4,
+      "type" : "USER",
+      "mappedEntityId" : "4",
+      "name" : "admin"
+    } ],
+    "modifiedBy" : [ "com.singularity.ee.controller.api.dto.Identity", {
+      "id" : 4,
+      "type" : "USER",
+      "mappedEntityId" : "4",
+      "name" : "admin"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 46,
+    "version" : 2,
+    "name" : "SAP Hybris - Active Users Metric is ab-normal",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.OtherAffectedEntityMatchCriteria", {
+      "id" : 94,
+      "version" : 0,
+      "aemcType" : "OTHER_AFFECTED_EMC",
+      "componentIds" : null,
+      "componentMatchCriteria" : null,
+      "missingEntities" : null,
+      "affectedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 2,
+        "prettyToString" : null
+      } ],
+      "cacheKey" : "otheraemc:-ae:APPLICATION,2"
+    } ],
+    "type" : "OTHER",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 123,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 187,
+        "version" : 1,
+        "type" : "POLICY_LEAF_CONDITION",
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "type" : "LEAF_METRIC_EXPRESSION",
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "ABSOLUTE_METRIC_SCOPE",
+            "logicalMetricName" : "Analytics|SAP Hybris - Active Users",
+            "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+              "id" : 0,
+              "version" : 0,
+              "entityType" : "APPLICATION",
+              "entityId" : 2,
+              "prettyToString" : null
+            } ],
+            "metricId" : 91438
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "inputMetricText" : false,
+          "inputMetricPath" : null,
+          "literalValueExpression" : false,
+          "value" : 0,
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Active Users', scope=Type:APPLICATION, id:2, metricId=91438}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+        } ],
+        "operator" : "NOT_EQUALS",
+        "value" : 3.0,
+        "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+        "useActiveBaseline" : true,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "condition 1",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 2,
+          "prettyToString" : null
+        } ] ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
+          "id" : 91438,
+          "version" : 0,
+          "name" : "SAP Hybris - Active Users",
+          "nameUnique" : true,
+          "applicationId" : 2,
+          "fullyQualifiedName" : "Analytics|SAP Hybris - Active Users",
+          "virtual" : false,
+          "agentType" : "APP_AGENT",
+          "timeRollupType" : "SUM",
+          "clusterRollupType" : "INDIVIDUAL",
+          "holeHandlingType" : "REGULAR_COUNTER",
+          "childMetrics" : null,
+          "accountWideMetricId" : 0
+        } ] ] ],
+        "triggerOnNoData" : false
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "ANY",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 124,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 188,
+        "version" : 1,
+        "type" : "POLICY_LEAF_CONDITION",
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "type" : "LEAF_METRIC_EXPRESSION",
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "ABSOLUTE_METRIC_SCOPE",
+            "logicalMetricName" : "Analytics|SAP Hybris - Active Users",
+            "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+              "id" : 0,
+              "version" : 0,
+              "entityType" : "APPLICATION",
+              "entityId" : 2,
+              "prettyToString" : null
+            } ],
+            "metricId" : 91438
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "inputMetricText" : false,
+          "inputMetricPath" : null,
+          "literalValueExpression" : false,
+          "value" : 0,
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Active Users', scope=Type:APPLICATION, id:2, metricId=91438}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+        } ],
+        "operator" : "NOT_EQUALS",
+        "value" : 2.0,
+        "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+        "useActiveBaseline" : true,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "condition 1",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 2,
+          "prettyToString" : null
+        } ] ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
+          "id" : 91438,
+          "version" : 0,
+          "name" : "SAP Hybris - Active Users",
+          "nameUnique" : true,
+          "applicationId" : 2,
+          "fullyQualifiedName" : "Analytics|SAP Hybris - Active Users",
+          "virtual" : false,
+          "agentType" : "APP_AGENT",
+          "timeRollupType" : "SUM",
+          "clusterRollupType" : "INDIVIDUAL",
+          "holeHandlingType" : "REGULAR_COUNTER",
+          "childMetrics" : null,
+          "accountWideMetricId" : 0
+        } ] ] ],
+        "triggerOnNoData" : false
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "ANY",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : false,
+    "createdBy" : [ "com.singularity.ee.controller.api.dto.Identity", {
+      "id" : 4,
+      "type" : "USER",
+      "mappedEntityId" : "4",
+      "name" : "admin"
+    } ],
+    "modifiedBy" : [ "com.singularity.ee.controller.api.dto.Identity", {
+      "id" : 4,
+      "type" : "USER",
+      "mappedEntityId" : "4",
+      "name" : "admin"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 47,
+    "version" : 2,
+    "name" : "SAP Hybris - Orders Placed Metric is ab-normal",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.OtherAffectedEntityMatchCriteria", {
+      "id" : 95,
+      "version" : 0,
+      "aemcType" : "OTHER_AFFECTED_EMC",
+      "componentIds" : null,
+      "componentMatchCriteria" : null,
+      "missingEntities" : null,
+      "affectedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 2,
+        "prettyToString" : null
+      } ],
+      "cacheKey" : "otheraemc:-ae:APPLICATION,2"
+    } ],
+    "type" : "OTHER",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 125,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 189,
+        "version" : 1,
+        "type" : "POLICY_LEAF_CONDITION",
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "type" : "LEAF_METRIC_EXPRESSION",
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "ABSOLUTE_METRIC_SCOPE",
+            "logicalMetricName" : "Analytics|SAP Hybris - Orders Placed",
+            "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+              "id" : 0,
+              "version" : 0,
+              "entityType" : "APPLICATION",
+              "entityId" : 2,
+              "prettyToString" : null
+            } ],
+            "metricId" : 91439
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "inputMetricText" : false,
+          "inputMetricPath" : null,
+          "literalValueExpression" : false,
+          "value" : 0,
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Orders Placed', scope=Type:APPLICATION, id:2, metricId=91439}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+        } ],
+        "operator" : "NOT_EQUALS",
+        "value" : 3.0,
+        "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+        "useActiveBaseline" : true,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "condition 1",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 2,
+          "prettyToString" : null
+        } ] ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
+          "id" : 91439,
+          "version" : 0,
+          "name" : "SAP Hybris - Orders Placed",
+          "nameUnique" : true,
+          "applicationId" : 2,
+          "fullyQualifiedName" : "Analytics|SAP Hybris - Orders Placed",
+          "virtual" : false,
+          "agentType" : "APP_AGENT",
+          "timeRollupType" : "SUM",
+          "clusterRollupType" : "INDIVIDUAL",
+          "holeHandlingType" : "REGULAR_COUNTER",
+          "childMetrics" : null,
+          "accountWideMetricId" : 0
+        } ] ] ],
+        "triggerOnNoData" : false
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "ANY",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 126,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 190,
+        "version" : 1,
+        "type" : "POLICY_LEAF_CONDITION",
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "type" : "LEAF_METRIC_EXPRESSION",
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "ABSOLUTE_METRIC_SCOPE",
+            "logicalMetricName" : "Analytics|SAP Hybris - Orders Placed",
+            "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+              "id" : 0,
+              "version" : 0,
+              "entityType" : "APPLICATION",
+              "entityId" : 2,
+              "prettyToString" : null
+            } ],
+            "metricId" : 91439
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "inputMetricText" : false,
+          "inputMetricPath" : null,
+          "literalValueExpression" : false,
+          "value" : 0,
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Orders Placed', scope=Type:APPLICATION, id:2, metricId=91439}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+        } ],
+        "operator" : "NOT_EQUALS",
+        "value" : 2.0,
+        "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+        "useActiveBaseline" : true,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "condition 1",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 2,
+          "prettyToString" : null
+        } ] ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
+          "id" : 91439,
+          "version" : 0,
+          "name" : "SAP Hybris - Orders Placed",
+          "nameUnique" : true,
+          "applicationId" : 2,
+          "fullyQualifiedName" : "Analytics|SAP Hybris - Orders Placed",
+          "virtual" : false,
+          "agentType" : "APP_AGENT",
+          "timeRollupType" : "SUM",
+          "clusterRollupType" : "INDIVIDUAL",
+          "holeHandlingType" : "REGULAR_COUNTER",
+          "childMetrics" : null,
+          "accountWideMetricId" : 0
+        } ] ] ],
+        "triggerOnNoData" : false
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "ANY",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : false,
+    "createdBy" : [ "com.singularity.ee.controller.api.dto.Identity", {
+      "id" : 4,
+      "type" : "USER",
+      "mappedEntityId" : "4",
+      "name" : "admin"
+    } ],
+    "modifiedBy" : [ "com.singularity.ee.controller.api.dto.Identity", {
+      "id" : 4,
+      "type" : "USER",
+      "mappedEntityId" : "4",
+      "name" : "admin"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 48,
+    "version" : 2,
+    "name" : "SAP Hybris - Average Oder Value Metric is ab-normal",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.OtherAffectedEntityMatchCriteria", {
+      "id" : 92,
+      "version" : 0,
+      "aemcType" : "OTHER_AFFECTED_EMC",
+      "componentIds" : null,
+      "componentMatchCriteria" : null,
+      "missingEntities" : null,
+      "affectedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 2,
+        "prettyToString" : null
+      } ],
+      "cacheKey" : "otheraemc:-ae:APPLICATION,2"
+    } ],
+    "type" : "OTHER",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 119,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 183,
+        "version" : 1,
+        "type" : "POLICY_LEAF_CONDITION",
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "type" : "LEAF_METRIC_EXPRESSION",
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "ABSOLUTE_METRIC_SCOPE",
+            "logicalMetricName" : "Analytics|SAP Hybris - Average Order Value",
+            "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+              "id" : 0,
+              "version" : 0,
+              "entityType" : "APPLICATION",
+              "entityId" : 2,
+              "prettyToString" : null
+            } ],
+            "metricId" : 91443
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "inputMetricText" : false,
+          "inputMetricPath" : null,
+          "literalValueExpression" : false,
+          "value" : 0,
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Average Order Value', scope=Type:APPLICATION, id:2, metricId=91443}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+        } ],
+        "operator" : "NOT_EQUALS",
+        "value" : 3.0,
+        "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+        "useActiveBaseline" : true,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "condition 1",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 2,
+          "prettyToString" : null
+        } ] ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
+          "id" : 91443,
+          "version" : 0,
+          "name" : "SAP Hybris - Average Order Value",
+          "nameUnique" : true,
+          "applicationId" : 2,
+          "fullyQualifiedName" : "Analytics|SAP Hybris - Average Order Value",
+          "virtual" : false,
+          "agentType" : "APP_AGENT",
+          "timeRollupType" : "AVERAGE",
+          "clusterRollupType" : "INDIVIDUAL",
+          "holeHandlingType" : "REGULAR_COUNTER",
+          "childMetrics" : null,
+          "accountWideMetricId" : 0
+        } ] ] ],
+        "triggerOnNoData" : false
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "ANY",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 120,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 184,
+        "version" : 1,
+        "type" : "POLICY_LEAF_CONDITION",
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "type" : "LEAF_METRIC_EXPRESSION",
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "ABSOLUTE_METRIC_SCOPE",
+            "logicalMetricName" : "Analytics|SAP Hybris - Average Order Value",
+            "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+              "id" : 0,
+              "version" : 0,
+              "entityType" : "APPLICATION",
+              "entityId" : 2,
+              "prettyToString" : null
+            } ],
+            "metricId" : 91443
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "inputMetricText" : false,
+          "inputMetricPath" : null,
+          "literalValueExpression" : false,
+          "value" : 0,
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Average Order Value', scope=Type:APPLICATION, id:2, metricId=91443}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+        } ],
+        "operator" : "NOT_EQUALS",
+        "value" : 2.0,
+        "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+        "useActiveBaseline" : true,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "condition 1",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 2,
+          "prettyToString" : null
+        } ] ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
+          "id" : 91443,
+          "version" : 0,
+          "name" : "SAP Hybris - Average Order Value",
+          "nameUnique" : true,
+          "applicationId" : 2,
+          "fullyQualifiedName" : "Analytics|SAP Hybris - Average Order Value",
+          "virtual" : false,
+          "agentType" : "APP_AGENT",
+          "timeRollupType" : "AVERAGE",
+          "clusterRollupType" : "INDIVIDUAL",
+          "holeHandlingType" : "REGULAR_COUNTER",
+          "childMetrics" : null,
+          "accountWideMetricId" : 0
+        } ] ] ],
+        "triggerOnNoData" : false
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "ANY",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : false,
+    "createdBy" : [ "com.singularity.ee.controller.api.dto.Identity", {
+      "id" : 4,
+      "type" : "USER",
+      "mappedEntityId" : "4",
+      "name" : "admin"
+    } ],
+    "modifiedBy" : [ "com.singularity.ee.controller.api.dto.Identity", {
+      "id" : 4,
+      "type" : "USER",
+      "mappedEntityId" : "4",
+      "name" : "admin"
+    } ]
+  } ] ] ],
+  "metatdata" : [ "java.util.ArrayList", [ [ "[Lcom.singularity.ee.controller.api.dto.MetricBaseline;", [ [ "com.singularity.ee.controller.api.dto.MetricBaseline", {
+    "id" : 5,
+    "version" : 0,
+    "name" : "All data - Last 15 days",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "seasonality" : "NONE",
+    "fixed" : false,
+    "fixedStartTime" : null,
+    "fixedEndTime" : null,
+    "allData" : false,
+    "numberOfDays" : 15,
+    "defaultBaseline" : false
+  } ], [ "com.singularity.ee.controller.api.dto.MetricBaseline", {
+    "id" : 6,
+    "version" : 1,
+    "name" : "Daily Trend - Last 30 days",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "seasonality" : "DAILY",
+    "fixed" : false,
+    "fixedStartTime" : null,
+    "fixedEndTime" : null,
+    "allData" : false,
+    "numberOfDays" : 30,
+    "defaultBaseline" : true
+  } ], [ "com.singularity.ee.controller.api.dto.MetricBaseline", {
+    "id" : 8,
+    "version" : 0,
+    "name" : "Monthly Trend - Last 1 year",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "seasonality" : "MONTHLY",
+    "fixed" : false,
+    "fixedStartTime" : null,
+    "fixedEndTime" : null,
+    "allData" : false,
+    "numberOfDays" : 365,
+    "defaultBaseline" : false
+  } ], [ "com.singularity.ee.controller.api.dto.MetricBaseline", {
+    "id" : 7,
+    "version" : 0,
+    "name" : "Weekly Trend - Last 3 months",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "seasonality" : "WEEKLY",
+    "fixed" : false,
+    "fixedStartTime" : null,
+    "fixedEndTime" : null,
+    "allData" : false,
+    "numberOfDays" : 90,
+    "defaultBaseline" : false
+  } ] ] ], [ "[Lcom.appdynamics.tools.domain.Tier;", [ [ "com.appdynamics.tools.domain.Tier", {
+    "id" : 3,
+    "version" : 0,
+    "name" : "analytics-tier-2",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "type" : "Application Server",
+    "agentType" : "APP_AGENT",
+    "numberOfNodes" : 1,
+    "application" : null,
+    "nodes" : null
+  } ] ] ], [ "[Lcom.appdynamics.tools.domain.Node;", [ [ "com.appdynamics.tools.domain.Node", {
+    "id" : 3,
+    "version" : 0,
+    "name" : "analytics-node|2",
+    "nameUnique" : true,
+    "type" : "Other",
+    "tierId" : 3,
+    "tierName" : "analytics-tier-2",
+    "appAgentVersion" : "",
+    "applicationName" : null,
+    "appAgentPresent" : false,
+    "machineId" : 1,
+    "applicationId" : 0,
+    "agentType" : "",
+    "machineName" : "analytics-machine|2",
+    "machineOSType" : "Linux",
+    "machineAgentVersion" : "",
+    "machineAgentPresent" : false
+  } ] ] ], [ "[Lcom.appdynamics.tools.domain.BusinessTransaction;", [ ] ], [ "[Lcom.appdynamics.tools.domain.Backend;", [ ] ], [ "[Lcom.singularity.ee.controller.api.dto.dbmon.DBServer;", [ [ "com.singularity.ee.controller.api.dto.dbmon.DBServer", {
+    "id" : 1,
+    "version" : 0,
+    "name" : "Hybris Database",
+    "nameUnique" : true,
+    "nodeId" : 18,
+    "configId" : 1,
+    "role" : "STANDALONE",
+    "type" : "MYSQL",
+    "backendIds" : [ 17, 22 ],
+    "internalName" : "dbmon:1"
+  } ] ] ], [ "[Lcom.appdynamics.tools.domain.MobileApplication;", [ ] ], [ "[Lcom.singularity.ee.controller.api.dto.RuleSchedule;", [ [ "com.singularity.ee.controller.api.dto.RuleSchedule", {
+    "id" : 12,
+    "version" : 0,
+    "name" : "End of Business Hour: 5pm-6pm, Mon-Fri",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "cronExpr" : "* * 17 ? * 2-6",
+    "desc" : "This schedule is active Monday through Friday, during end of business hour",
+    "displayProperties" : null,
+    "endTimeCronExpr" : "* * 18 ? * 2-6"
+  } ], [ "com.singularity.ee.controller.api.dto.RuleSchedule", {
+    "id" : 11,
+    "version" : 0,
+    "name" : "Weekday lunch: 12pm-1pm, Mon-Fri",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "cronExpr" : "* * 12 ? * 2-6",
+    "desc" : "This schedule is active Monday through Friday, during lunch hour",
+    "displayProperties" : null,
+    "endTimeCronExpr" : "* * 13 ? * 2-6"
+  } ], [ "com.singularity.ee.controller.api.dto.RuleSchedule", {
+    "id" : 10,
+    "version" : 0,
+    "name" : "Weekday mornings: 8am-12pm, Mon-Fri",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "cronExpr" : "* * 8 ? * 2-6",
+    "desc" : "This schedule is active Monday through Friday, during morning hours",
+    "displayProperties" : null,
+    "endTimeCronExpr" : "* * 12 ? * 2-6"
+  } ], [ "com.singularity.ee.controller.api.dto.RuleSchedule", {
+    "id" : 7,
+    "version" : 0,
+    "name" : "Weekdays: 8am-5pm, Mon-Fri",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "cronExpr" : "* * 8 ? * 2-6",
+    "desc" : "This schedule is active Monday through Friday, during business hours",
+    "displayProperties" : null,
+    "endTimeCronExpr" : "* * 17 ? * 2-6"
+  } ], [ "com.singularity.ee.controller.api.dto.RuleSchedule", {
+    "id" : 9,
+    "version" : 0,
+    "name" : "Weekends: 12am-11pm, Sat-Sun",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "cronExpr" : "* * 0 ? * 7",
+    "desc" : "This schedule is active all day and night on the weekend",
+    "displayProperties" : null,
+    "endTimeCronExpr" : "* * 23 ? * 1"
+  } ], [ "com.singularity.ee.controller.api.dto.RuleSchedule", {
+    "id" : 8,
+    "version" : 0,
+    "name" : "Weeknights: 11pm-6am, Mon-Fri",
+    "nameUnique" : true,
+    "applicationId" : 2,
+    "cronExpr" : "* * 23 ? * 2-6",
+    "desc" : "This schedule is active Monday through Friday, during night time batch runs",
+    "displayProperties" : null,
+    "endTimeCronExpr" : "* * 6 ? * 2-7"
+  } ] ] ] ] ]
+}
