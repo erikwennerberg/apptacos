@@ -8,7 +8,7 @@
   "entities" : [ "java.util.ArrayList", [ [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
     "id" : 45,
     "version" : 3,
-    "name" : "SAP Hybris - Revenue Metric is ab-normal",
+    "name" : "{{businessApplication}} - Revenue Metric is ab-normal",
     "nameUnique" : true,
     "applicationId" : 2,
     "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.OtherAffectedEntityMatchCriteria", {
@@ -41,7 +41,7 @@
           "type" : "LEAF_METRIC_EXPRESSION",
           "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
             "type" : "ABSOLUTE_METRIC_SCOPE",
-            "logicalMetricName" : "Analytics|SAP Hybris - Revenue",
+            "logicalMetricName" : "Analytics|{{businessApplication}} - Revenue",
             "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
               "id" : 0,
               "version" : 0,
@@ -58,7 +58,7 @@
           "inputMetricPath" : null,
           "literalValueExpression" : false,
           "value" : 0,
-          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Revenue', scope=Type:APPLICATION, id:2, metricId=91437}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|{{businessApplication}} - Revenue', scope=Type:APPLICATION, id:2, metricId=91437}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
         } ],
         "operator" : "NOT_EQUALS",
         "value" : 3.0,
@@ -78,10 +78,10 @@
         "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
           "id" : 91437,
           "version" : 0,
-          "name" : "SAP Hybris - Revenue",
+          "name" : "{{businessApplication}} - Revenue",
           "nameUnique" : true,
           "applicationId" : 2,
-          "fullyQualifiedName" : "Analytics|SAP Hybris - Revenue",
+          "fullyQualifiedName" : "Analytics|{{businessApplication}} - Revenue",
           "virtual" : false,
           "agentType" : "APP_AGENT",
           "timeRollupType" : "SUM",
@@ -108,7 +108,7 @@
           "type" : "LEAF_METRIC_EXPRESSION",
           "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
             "type" : "ABSOLUTE_METRIC_SCOPE",
-            "logicalMetricName" : "Analytics|SAP Hybris - Revenue",
+            "logicalMetricName" : "Analytics|{{businessApplication}} - Revenue",
             "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
               "id" : 0,
               "version" : 0,
@@ -125,7 +125,7 @@
           "inputMetricPath" : null,
           "literalValueExpression" : false,
           "value" : 0,
-          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Revenue', scope=Type:APPLICATION, id:2, metricId=91437}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|{{businessApplication}} - Revenue', scope=Type:APPLICATION, id:2, metricId=91437}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
         } ],
         "operator" : "NOT_EQUALS",
         "value" : 2.0,
@@ -145,10 +145,10 @@
         "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
           "id" : 91437,
           "version" : 0,
-          "name" : "SAP Hybris - Revenue",
+          "name" : "{{businessApplication}} - Revenue",
           "nameUnique" : true,
           "applicationId" : 2,
-          "fullyQualifiedName" : "Analytics|SAP Hybris - Revenue",
+          "fullyQualifiedName" : "Analytics|{{businessApplication}} - Revenue",
           "virtual" : false,
           "agentType" : "APP_AGENT",
           "timeRollupType" : "SUM",
@@ -184,7 +184,7 @@
   } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
     "id" : 46,
     "version" : 2,
-    "name" : "SAP Hybris - Active Users Metric is ab-normal",
+    "name" : "{{businessApplication}} - Active Users Metric is ab-normal",
     "nameUnique" : true,
     "applicationId" : 2,
     "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.OtherAffectedEntityMatchCriteria", {
@@ -217,7 +217,7 @@
           "type" : "LEAF_METRIC_EXPRESSION",
           "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
             "type" : "ABSOLUTE_METRIC_SCOPE",
-            "logicalMetricName" : "Analytics|SAP Hybris - Active Users",
+            "logicalMetricName" : "Analytics|{{businessApplication}} - Active Users",
             "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
               "id" : 0,
               "version" : 0,
@@ -234,7 +234,7 @@
           "inputMetricPath" : null,
           "literalValueExpression" : false,
           "value" : 0,
-          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Active Users', scope=Type:APPLICATION, id:2, metricId=91438}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|{{businessApplication}} - Active Users', scope=Type:APPLICATION, id:2, metricId=91438}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
         } ],
         "operator" : "NOT_EQUALS",
         "value" : 3.0,
@@ -254,10 +254,10 @@
         "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
           "id" : 91438,
           "version" : 0,
-          "name" : "SAP Hybris - Active Users",
+          "name" : "{{businessApplication}} - Active Users",
           "nameUnique" : true,
           "applicationId" : 2,
-          "fullyQualifiedName" : "Analytics|SAP Hybris - Active Users",
+          "fullyQualifiedName" : "Analytics|{{businessApplication}} - Active Users",
           "virtual" : false,
           "agentType" : "APP_AGENT",
           "timeRollupType" : "SUM",
@@ -284,7 +284,7 @@
           "type" : "LEAF_METRIC_EXPRESSION",
           "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
             "type" : "ABSOLUTE_METRIC_SCOPE",
-            "logicalMetricName" : "Analytics|SAP Hybris - Active Users",
+            "logicalMetricName" : "Analytics|{{businessApplication}} - Active Users",
             "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
               "id" : 0,
               "version" : 0,
@@ -301,7 +301,7 @@
           "inputMetricPath" : null,
           "literalValueExpression" : false,
           "value" : 0,
-          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Active Users', scope=Type:APPLICATION, id:2, metricId=91438}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|{{businessApplication}} - Active Users', scope=Type:APPLICATION, id:2, metricId=91438}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
         } ],
         "operator" : "NOT_EQUALS",
         "value" : 2.0,
@@ -321,10 +321,10 @@
         "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
           "id" : 91438,
           "version" : 0,
-          "name" : "SAP Hybris - Active Users",
+          "name" : "{{businessApplication}} - Active Users",
           "nameUnique" : true,
           "applicationId" : 2,
-          "fullyQualifiedName" : "Analytics|SAP Hybris - Active Users",
+          "fullyQualifiedName" : "Analytics|{{businessApplication}} - Active Users",
           "virtual" : false,
           "agentType" : "APP_AGENT",
           "timeRollupType" : "SUM",
@@ -360,7 +360,7 @@
   } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
     "id" : 47,
     "version" : 2,
-    "name" : "SAP Hybris - Orders Placed Metric is ab-normal",
+    "name" : "{{businessApplication}} - Orders Placed Metric is ab-normal",
     "nameUnique" : true,
     "applicationId" : 2,
     "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.OtherAffectedEntityMatchCriteria", {
@@ -393,7 +393,7 @@
           "type" : "LEAF_METRIC_EXPRESSION",
           "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
             "type" : "ABSOLUTE_METRIC_SCOPE",
-            "logicalMetricName" : "Analytics|SAP Hybris - Orders Placed",
+            "logicalMetricName" : "Analytics|{{businessApplication}} - Orders Placed",
             "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
               "id" : 0,
               "version" : 0,
@@ -410,7 +410,7 @@
           "inputMetricPath" : null,
           "literalValueExpression" : false,
           "value" : 0,
-          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Orders Placed', scope=Type:APPLICATION, id:2, metricId=91439}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|{{businessApplication}} - Orders Placed', scope=Type:APPLICATION, id:2, metricId=91439}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
         } ],
         "operator" : "NOT_EQUALS",
         "value" : 3.0,
@@ -430,10 +430,10 @@
         "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
           "id" : 91439,
           "version" : 0,
-          "name" : "SAP Hybris - Orders Placed",
+          "name" : "{{businessApplication}} - Orders Placed",
           "nameUnique" : true,
           "applicationId" : 2,
-          "fullyQualifiedName" : "Analytics|SAP Hybris - Orders Placed",
+          "fullyQualifiedName" : "Analytics|{{businessApplication}} - Orders Placed",
           "virtual" : false,
           "agentType" : "APP_AGENT",
           "timeRollupType" : "SUM",
@@ -460,7 +460,7 @@
           "type" : "LEAF_METRIC_EXPRESSION",
           "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
             "type" : "ABSOLUTE_METRIC_SCOPE",
-            "logicalMetricName" : "Analytics|SAP Hybris - Orders Placed",
+            "logicalMetricName" : "Analytics|{{businessApplication}} - Orders Placed",
             "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
               "id" : 0,
               "version" : 0,
@@ -477,7 +477,7 @@
           "inputMetricPath" : null,
           "literalValueExpression" : false,
           "value" : 0,
-          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Orders Placed', scope=Type:APPLICATION, id:2, metricId=91439}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|{{businessApplication}} - Orders Placed', scope=Type:APPLICATION, id:2, metricId=91439}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
         } ],
         "operator" : "NOT_EQUALS",
         "value" : 2.0,
@@ -497,10 +497,10 @@
         "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
           "id" : 91439,
           "version" : 0,
-          "name" : "SAP Hybris - Orders Placed",
+          "name" : "{{businessApplication}} - Orders Placed",
           "nameUnique" : true,
           "applicationId" : 2,
-          "fullyQualifiedName" : "Analytics|SAP Hybris - Orders Placed",
+          "fullyQualifiedName" : "Analytics|{{businessApplication}} - Orders Placed",
           "virtual" : false,
           "agentType" : "APP_AGENT",
           "timeRollupType" : "SUM",
@@ -536,7 +536,7 @@
   } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
     "id" : 48,
     "version" : 2,
-    "name" : "SAP Hybris - Average Oder Value Metric is ab-normal",
+    "name" : "{{businessApplication}} - Average Oder Value Metric is ab-normal",
     "nameUnique" : true,
     "applicationId" : 2,
     "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.OtherAffectedEntityMatchCriteria", {
@@ -569,7 +569,7 @@
           "type" : "LEAF_METRIC_EXPRESSION",
           "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
             "type" : "ABSOLUTE_METRIC_SCOPE",
-            "logicalMetricName" : "Analytics|SAP Hybris - Average Order Value",
+            "logicalMetricName" : "Analytics|{{businessApplication}} - Average Order Value",
             "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
               "id" : 0,
               "version" : 0,
@@ -586,7 +586,7 @@
           "inputMetricPath" : null,
           "literalValueExpression" : false,
           "value" : 0,
-          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Average Order Value', scope=Type:APPLICATION, id:2, metricId=91443}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|{{businessApplication}} - Average Order Value', scope=Type:APPLICATION, id:2, metricId=91443}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
         } ],
         "operator" : "NOT_EQUALS",
         "value" : 3.0,
@@ -606,10 +606,10 @@
         "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
           "id" : 91443,
           "version" : 0,
-          "name" : "SAP Hybris - Average Order Value",
+          "name" : "{{businessApplication}} - Average Order Value",
           "nameUnique" : true,
           "applicationId" : 2,
-          "fullyQualifiedName" : "Analytics|SAP Hybris - Average Order Value",
+          "fullyQualifiedName" : "Analytics|{{businessApplication}} - Average Order Value",
           "virtual" : false,
           "agentType" : "APP_AGENT",
           "timeRollupType" : "AVERAGE",
@@ -636,7 +636,7 @@
           "type" : "LEAF_METRIC_EXPRESSION",
           "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
             "type" : "ABSOLUTE_METRIC_SCOPE",
-            "logicalMetricName" : "Analytics|SAP Hybris - Average Order Value",
+            "logicalMetricName" : "Analytics|{{businessApplication}} - Average Order Value",
             "scope" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
               "id" : 0,
               "version" : 0,
@@ -653,7 +653,7 @@
           "inputMetricPath" : null,
           "literalValueExpression" : false,
           "value" : 0,
-          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|SAP Hybris - Average Order Value', scope=Type:APPLICATION, id:2, metricId=91443}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
+          "cacheKey" : "lme::LeafMetricExpression{metricDefinition=AbstractMetricDefinition{type=ABSOLUTE_METRIC_SCOPE, logicalMetricName='Analytics|{{businessApplication}} - Average Order Value', scope=Type:APPLICATION, id:2, metricId=91443}, functionType=VALUE, displayName='null', literalValue=0, inputMetricText=false, inputMetricPath='null', literalValueExpression=false}"
         } ],
         "operator" : "NOT_EQUALS",
         "value" : 2.0,
@@ -673,10 +673,10 @@
         "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ [ "com.singularity.ee.controller.api.dto.Metric", {
           "id" : 91443,
           "version" : 0,
-          "name" : "SAP Hybris - Average Order Value",
+          "name" : "{{businessApplication}} - Average Order Value",
           "nameUnique" : true,
           "applicationId" : 2,
-          "fullyQualifiedName" : "Analytics|SAP Hybris - Average Order Value",
+          "fullyQualifiedName" : "Analytics|{{businessApplication}} - Average Order Value",
           "virtual" : false,
           "agentType" : "APP_AGENT",
           "timeRollupType" : "AVERAGE",

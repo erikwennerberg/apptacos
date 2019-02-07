@@ -1032,7 +1032,7 @@
     "entryPointType" : "POJO",
     "internalName" : "_APPDYNAMICS_DEFAULT_TX_",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 312,
@@ -1042,7 +1042,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Category Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 313,
@@ -1052,7 +1052,7 @@
     "entryPointType" : "POJO",
     "internalName" : "CronJob",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "true"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 314,
@@ -1062,7 +1062,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Product Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 315,
@@ -1072,7 +1072,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Search Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 316,
@@ -1082,7 +1082,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Login Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 317,
@@ -1092,7 +1092,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Register Action",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 318,
@@ -1102,7 +1102,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Add To Cart Action",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 319,
@@ -1112,7 +1112,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Cart Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 320,
@@ -1122,7 +1122,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "/yacceleratorstorefront/en",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 321,
@@ -1132,7 +1132,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Checkout - Summary View Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 322,
@@ -1142,7 +1142,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "checkoutmulti",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 323,
@@ -1152,7 +1152,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Checkout - Place Order Action",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 324,
@@ -1162,7 +1162,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Checkout - Order Confirmation Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 330,
@@ -1182,7 +1182,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "WEB-INFviews",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ] ] ] ] ]
 }

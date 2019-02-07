@@ -18,7 +18,7 @@
     "version" : 0,
     "name" : null,
     "nameUnique" : true,
-    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"9755b6cd-dbec-42f0-b795-802f77d3dc45\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"5ee7a1e9-f6d1-4213-8d75-0d8e10093710\",\"name\": \"Hybris Scope\",\"description\": \"\",\"createdBy\": \"admin\",\"createdOn\": 1521801961395,\"updatedBy\": \"admin\",\"updatedOn\": 1521801970450},\"includedTiers\": [{\"id\": \"8290ebc2-ee21-4c31-8bda-05a9b84109b6\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"5ee7a1e9-f6d1-4213-8d75-0d8e10093710\",\"name\": \"hybris-frontend\"}],\"version\": 1}",
+    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"9755b6cd-dbec-42f0-b795-802f77d3dc45\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"5ee7a1e9-f6d1-4213-8d75-0d8e10093710\",\"name\": \"Hybris Scope\",\"description\": \"\",\"createdBy\": \"admin\",\"createdOn\": 1521801961395,\"updatedBy\": \"admin\",\"updatedOn\": 1521801970450},\"includedTiers\": [{\"id\": \"8290ebc2-ee21-4c31-8bda-05a9b84109b6\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"5ee7a1e9-f6d1-4213-8d75-0d8e10093710\",\"name\": \"{{storeFrontTier}}\"}],\"version\": 1}",
     "scope" : null,
     "idStr" : null
   } ] ] ],

@@ -1443,7 +1443,7 @@
       "cacheKey" : "jmxType:NODES-mpp:JMX|Cache-jmxmc:-type:ANY-nodemc:ANY-nodeTypes:[APP_AGENT]"
     } ],
     "type" : "JMX",
-    "description" : "Application Infrastructure Performance|hybris-frontend|JMX|Cache",
+    "description" : "Application Infrastructure Performance|{{storeFrontTier}}|JMX|Cache",
     "enabled" : true,
     "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
       "id" : 79,
@@ -1584,7 +1584,7 @@
       "cacheKey" : "jmxType:JMX_INSTANCE_NAME-mpp:JMX|DataSources-jmxmc:-type:ANY-nodemc:ANY-nodeTypes:[APP_AGENT]"
     } ],
     "type" : "JMX",
-    "description" : "Application Infrastructure Performance|hybris-frontend|JMX|DataSources",
+    "description" : "Application Infrastructure Performance|{{storeFrontTier}}|JMX|DataSources",
     "enabled" : true,
     "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
       "id" : 81,
@@ -1827,7 +1827,7 @@
   } ] ] ], [ "[Lcom.appdynamics.tools.domain.Tier;", [ [ "com.appdynamics.tools.domain.Tier", {
     "id" : 17,
     "version" : 0,
-    "name" : "hybris-frontend",
+    "name" : "{{storeFrontTier}}",
     "nameUnique" : true,
     "applicationId" : 10,
     "type" : "Application Server",
@@ -1849,11 +1849,11 @@
   } ] ] ], [ "[Lcom.appdynamics.tools.domain.Node;", [ [ "com.appdynamics.tools.domain.Node", {
     "id" : 17,
     "version" : 0,
-    "name" : "hybris-frontend-01",
+    "name" : "{{storeFrontTier}}-01",
     "nameUnique" : true,
     "type" : "Other",
     "tierId" : 17,
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "appAgentVersion" : "Server Agent v4.4.2 GA #4.4.2.22394 rnull null",
     "applicationName" : null,
     "appAgentPresent" : true,
@@ -1890,7 +1890,7 @@
     "entryPointType" : "POJO",
     "internalName" : "_APPDYNAMICS_DEFAULT_TX_",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 298,
@@ -1900,7 +1900,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Category Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 299,
@@ -1910,7 +1910,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Product Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 300,
@@ -1920,7 +1920,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Login Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 301,
@@ -1930,7 +1930,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Register Action",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 302,
@@ -1940,7 +1940,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Search Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 303,
@@ -1950,7 +1950,7 @@
     "entryPointType" : "POJO",
     "internalName" : "CronJob",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 304,
@@ -1960,7 +1960,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Add To Cart Action",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 305,
@@ -1970,7 +1970,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Cart Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 306,
@@ -1980,7 +1980,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Checkout - Summary View Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 309,
@@ -1990,7 +1990,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Checkout - Add Payment Method Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 310,
@@ -2000,7 +2000,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Checkout - Add Delivery Address Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 311,
@@ -2010,7 +2010,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Checkout - Place Order Action",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 312,
@@ -2020,7 +2020,7 @@
     "entryPointType" : "SERVLET",
     "internalName" : "Checkout - Order Confirmation Page",
     "tierId" : "17",
-    "tierName" : "hybris-frontend",
+    "tierName" : "{{storeFrontTier}}",
     "background" : "false"
   } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
     "id" : 313,
