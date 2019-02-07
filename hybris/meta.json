@@ -2,7 +2,7 @@
   "controllerVersion" : "4.5.4",
   "name" : "SAP Hybris",
   "version" : "0.1",
-  "supportedCotsVersion": "6.1.0.3",
+  "supportedCotsVersions": ["6.1.0.3"],
   "tags" : [ "hybris", "commerce", "sap" ],
   "authors" : [ "Severin Neumann" ],
   "support": "author",
@@ -11,9 +11,9 @@
   "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/246841357/3.+AppDynamics+Configuration",
   "product_link": "http://www.hybris.com",
   "settings": [
-    {"type": "application", "name": "application", "description": "The application containing the SAP Hybris environment", "default": "SAP Hybris"},
-    {"type": "tier", "name": "storeFront", "description": "The name of the tier serving the store front of your hybris application", "default": "hybris-frontend"},
-    {"type": "tier", "name": "backOffice", "description": "The name of the tier serving the back office of your hybris application", "default": "hybris-backend"}
+    {"type": "application", "name": "businessApplication", "description": "The application containing the SAP Hybris environment", "default": "SAP Hybris"},
+    {"type": "tier", "name": "storeFrontTier", "description": "The name of the tier serving the store front of your hybris application", "default": "hybris-frontend"},
+    {"type": "tier", "name": "backOfficeTier", "description": "The name of the tier serving the back office of your hybris application", "default": "hybris-backend"}
   ],
   "ingredients" : [
 	  {"type": "scope", "order" : 0, "file" : "0-scopes.json"},
