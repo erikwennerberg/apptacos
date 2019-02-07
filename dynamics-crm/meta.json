@@ -2,7 +2,7 @@
   "controllerVersion" : "4.5.4",
   "name" : "Microsoft Dynamics CRM",
   "version" : "0.1",
-  "supportedCotsVersions": [7.0, 7.1, 8.0, 8.1],
+  "supportedCotsVersions": ["7.0", "7.1", "8.0", "8.1"],
   "tags" : [ "microsoft", "dynamics", "crm" ],
   "authors" : [ "Daniel Odievich" ],
   "support": "author",
@@ -11,6 +11,10 @@
   "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/128681626/How+to+Instrument+and+Configure+Dynamics+CRM",
   "product_link": "https://dynamics.microsoft.com/en-us/crm/what-is-crm/",
   "ingredients" : [
-
+	  	  {"type": "backend-detection", "order" : 0, "file" : "backend-detection.json"},
+	  	  {"type": "exit-points", "order" : 1, "file" : "exit-points.json"},
+	  	  {"type": "data-collectors", "order" : 2, "file" : "data-collectors.json"},
+	  	  {"type": "eum-app-integration", "order" : 3, "file" : "eum-app-integration.json"},
+	  	  {"type": "browser-eum-config", "order" : 4, "file" : "browser-eum-config.json"}
   ]
 }

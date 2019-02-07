@@ -1,0 +1,106 @@
+{
+	"controllerUrl" : "http://appdcntr42full:8090",
+	"applicationId" : 6,
+	"tierId" : null,
+	"user" : "appdadmin",
+	"createdDate" : ["java.util.Date", 1479257109825],
+	"entityType" : "exit-points",
+	"entities" : ["java.util.ArrayList", [["com.singularity.ee.controller.api.dto.CustomExitPointDefinition", {
+					"id" : 1,
+					"version" : 1,
+					"name" : "OWA.DiskCache.Put",
+					"nameUnique" : true,
+					"applicationComponentId" : 0,
+					"instrumentationPoint" : ["com.singularity.ee.controller.api.dto.InstrumentationPoint", {
+							"id" : 1,
+							"version" : 1,
+							"methodDefinition" : ["com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.POJOMethodDefinition", {
+									"id" : 45,
+									"version" : 1,
+									"matchType" : "MATCHES_CLASS",
+									"className" : "Microsoft.Office.Web.DiskCache.DiskIO",
+									"methodName" : "CachePut",
+									"methodParameterTypes" : [],
+									"matchConditions" : ["[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.MethodInvocationDataMatchCondition;", []],
+									"fileName" : null,
+									"startLineNo" : 0,
+									"endLineNo" : 0,
+									"gathererType" : "CLASS_METHOD",
+									"ruleContextID" : 1279491382,
+									"hashValueDetermined" : false,
+									"hashValue" : 0
+								}
+							],
+							"customMetricDefinitions" : ["[Lcom.singularity.ee.controller.api.dto.InfoPointMetricDefinition;", []],
+							"dataGathererConfigurations" : ["[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.MethodInvocationDataGathererConfig;", []],
+							"applyForAllTransactions" : true,
+							"businessTransactionIds" : []
+						}
+					],
+					"exitPointIdentifiers" : ["[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.MethodInvocationDataGathererConfig;", []],
+					"enabled" : true,
+					"type" : "FILE_SERVER",
+					"turboExit" : false,
+					"useCustomExitNameAsIdentifier" : false,
+					"attachedEntity" : ["com.singularity.ee.controller.api.dto.EntityDefinition", {
+							"id" : 0,
+							"version" : 0,
+							"entityType" : "APPLICATION",
+							"entityId" : 6,
+							"prettyToString" : null
+						}
+					],
+					"agentType" : "DOT_NET_APP_AGENT",
+					"exitPointIdInString" : null
+				}
+			], ["com.singularity.ee.controller.api.dto.CustomExitPointDefinition", {
+					"id" : 2,
+					"version" : 0,
+					"name" : "OWA.DiskCache.Read",
+					"nameUnique" : true,
+					"applicationComponentId" : 0,
+					"instrumentationPoint" : ["com.singularity.ee.controller.api.dto.InstrumentationPoint", {
+							"id" : 2,
+							"version" : 1,
+							"methodDefinition" : ["com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.POJOMethodDefinition", {
+									"id" : 46,
+									"version" : 1,
+									"matchType" : "MATCHES_CLASS",
+									"className" : "Microsoft.Office.Web.DiskCache.DiskIO",
+									"methodName" : "CacheRead",
+									"methodParameterTypes" : [],
+									"matchConditions" : ["[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.MethodInvocationDataMatchCondition;", []],
+									"fileName" : null,
+									"startLineNo" : 0,
+									"endLineNo" : 0,
+									"gathererType" : "CLASS_METHOD",
+									"ruleContextID" : 699178177,
+									"hashValueDetermined" : false,
+									"hashValue" : 0
+								}
+							],
+							"customMetricDefinitions" : ["[Lcom.singularity.ee.controller.api.dto.InfoPointMetricDefinition;", []],
+							"dataGathererConfigurations" : ["[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.MethodInvocationDataGathererConfig;", []],
+							"applyForAllTransactions" : true,
+							"businessTransactionIds" : []
+						}
+					],
+					"exitPointIdentifiers" : ["[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.MethodInvocationDataGathererConfig;", []],
+					"enabled" : true,
+					"type" : "FILE_SERVER",
+					"turboExit" : false,
+					"useCustomExitNameAsIdentifier" : false,
+					"attachedEntity" : ["com.singularity.ee.controller.api.dto.EntityDefinition", {
+							"id" : 0,
+							"version" : 0,
+							"entityType" : "APPLICATION",
+							"entityId" : 6,
+							"prettyToString" : null
+						}
+					],
+					"agentType" : "DOT_NET_APP_AGENT",
+					"exitPointIdInString" : null
+				}
+			]]],
+	"metatdata" : null
+}

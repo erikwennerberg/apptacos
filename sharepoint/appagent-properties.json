@@ -1,0 +1,1075 @@
+{
+	"controllerUrl" : "http://appdcntr42full:8090",
+	"applicationId" : 6,
+	"tierId" : null,
+	"user" : "appdadmin",
+	"createdDate" : ["java.util.Date", 1479257013122],
+	"entityType" : "appagent-properties",
+	"entities" : ["java.util.ArrayList", [["com.appdynamics.tools.vo.AppAgentPropConfig", {
+					"id" : -519391665,
+					"version" : 0,
+					"name" : "DOT_NET_APP_AGENT",
+					"nameUnique" : true,
+					"agentType" : "DOT_NET_APP_AGENT",
+					"configuration" : ["com.singularity.ee.controller.api.dto.AgentConfiguration", {
+							"id" : 52,
+							"version" : 4,
+							"attachedEntity" : ["com.singularity.ee.controller.api.dto.EntityDefinition", {
+									"id" : 0,
+									"version" : 0,
+									"entityType" : "APPLICATION",
+									"entityId" : 6,
+									"prettyToString" : null
+								}
+							],
+							"agentType" : "DOT_NET_APP_AGENT",
+							"override" : true,
+							"timestamp" : 1478287768117,
+							"properties" : ["[Lcom.singularity.ee.controller.api.dto.Property;", [["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2546,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2746,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-json-bci-rules",
+													"description" : " set this property to true to enable JSON Byte Code Instrumentation rules 'org.json.JSONObject'.'get/getString', default value is 'true', needs JVM restart. ",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "true",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "true",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2547,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2747,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-xml-bci-rules",
+													"description" : " set this property to true to enable Java XML Binding and DOM Parser Byte Code Instrumentation rules, default value is 'true', needs JVM restart. ",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "true",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "true",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2548,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2748,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-startup-snapshot-policy",
+													"description" : "Disable/enable the policy for startup request snapshots which will mean snapshots will be collected for all BTs forall invocations for the first 2 minutes of an application server start. Default value is false.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2549,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2749,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "on-demand-snapshots",
+													"description" : "Collect snapshots for all business transactions executed in this node. Default value is false. Does not need a restart.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2550,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2750,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "callgraph-granularity-in-ms",
+													"description" : "Granularity for call graphs only for this node. The global configuration will be ignored if this is used. The value is ignored if 'adaptive-callgraph-granularity' is set to true. A value of zero (default) implies the global configuration (from Configuration --> Callgraph Settings) will be used. Does not need a restart",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "5000",
+													"lowerNumericBound" : "0",
+													"defaultStringValue" : "0",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "0",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2551,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2751,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "show-packages",
+													"description" : "Show these packages / class names in addition to the ones configured in the global callgraph configuration, for the callgraphs captured on this node. Does not need a restart",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2552,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2752,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "dont-show-packages",
+													"description" : "Do not show these packages / class names in addition to the ones configured in the global callgraph configuration, for the callgraphs captured on this node. Does not need a restart",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2553,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2753,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "min-duration-for-jdbc-call-in-ms",
+													"description" : "JDBC call taking more time than the specified time (in milliseconds) will be captured in Callgraph. The quesry will continue to show up in request snapshot. Setting this value too low (< 10ms) may affect application response times. Does not need a restart",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : "0",
+													"defaultStringValue" : "10",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "10",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2554,
+											"version" : 1,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2754,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "max-jdbc-calls-per-callgraph",
+													"description" : "Maximum number of sql queries  that will be reported per callgraph. Note - Only queries taking more time than 'min-duration-for-jdbc-callsample' wil be reported. Does not need a restart",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "1000",
+													"lowerNumericBound" : "1",
+													"defaultStringValue" : "100",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "1000",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2555,
+											"version" : 1,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2755,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "max-jdbc-calls-per-snapshot",
+													"description" : "Maximum number of unique sql queries that will be reported per snapshot. Does not need a restart",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "5000",
+													"lowerNumericBound" : "1",
+													"defaultStringValue" : "500",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "1000",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2556,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2756,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "adaptive-callgraph-granularity",
+													"description" : "Callgraph granularity based on average response time for the business transaction in last 1 minute. The following distribution is used. Granularity of 10ms for avg response time of <= 10 seconds; 50 ms for 10 to 60 secs; 100 ms for 60 to 600 secs; 200ms for > 600 seconds",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2557,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2757,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-transaction-correlation",
+													"description" : "Disable/enable transaction correlation, default value is true, doesn't require restart",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "true",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "true",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2558,
+											"version" : 1,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2758,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-soap-header-correlation",
+													"description" : "Disable/enable web service transaction correlation, default value is false, doesn't require restart",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "true",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2559,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2759,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "collect-user-data-sync",
+													"description" : "Collect user data from diagnostic pojo data collectors synchronously,  default value is true, doesn't require restart",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "true",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "true",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2560,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2760,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "capture-raw-sql",
+													"description" : "Capture Raw SQLs for this node. eg. select * from user where ssn = '123-123-1234'",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2561,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2761,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "jdbc-statements",
+													"description" : "Implementation classes of the java.sql.Statement interface",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2562,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2762,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "jdbc-connections",
+													"description" : "Implementation classes of the java.sql.Connection interface",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2563,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2763,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "jdbc-prepared-statements",
+													"description" : "Implementation classes of the java.sql.PreparedStatement interface",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2564,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2764,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "jdbc-callable-statements",
+													"description" : "Implementation classes of the java.sql.CallableStatement interface",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2565,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2765,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "disable-exit-call-metrics-for",
+													"description" : "Disable exit call monitoring for a specific type i.e JDBC, HTTP, JMS, WEB_SERVICE. If set the average data (calls /min, Avg response time for the specific exit call type will not  be collected. However on a snapshot all details will be collected.  Set this if the app makes a large number of exit calls per transaction and the avg metrics is not important. By default all exit call metrics are enabled.",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2566,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2766,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "disable-exit-call-correlation-for",
+													"description" : "Disable exit call correlation for a specific type i.e HTTP, JMS, RMI. By default all exit call correlation are enabled.",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2567,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2767,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "disable-custom-exit-points-for",
+													"description" : "Disable Out of the box custom exit points by specifying the type here, e.g. ehcache For multiple, use a comma separated list from the following SAP,Mail,LDAP,MongoDB",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2568,
+											"version" : 2,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2768,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "max-business-transactions",
+													"description" : "Number of business transactions discovered once an agent is started. This is done to prevent business transaction metric explosion as an unsuitable discovery scheme can potentially produce thousands of transactions, Default value is 50.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "300",
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "50",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "300",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2569,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2769,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "min-load-per-minute-diagnostic-session-trigger",
+													"description" : "Number of requests per Business Transaction to evaluate before triggering a diagnostic session. This is to prevent diagnostic sessions when there is not enough load. ",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "10",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "10",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2570,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2770,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "slow-request-threshold",
+													"description" : "In flight requests taking more time than this threshold (in ms) and with a deviation greater than 'slow-request-deviation' from the current average response time will be monitored to capture hotspots. ",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "3600",
+													"lowerNumericBound" : "0",
+													"defaultStringValue" : "500",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "500",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2571,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2771,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "slow-request-monitor-interval",
+													"description" : "In flight requests are checked for slowness in intervals (in ms) specified by this property.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "3600",
+													"lowerNumericBound" : "0",
+													"defaultStringValue" : "100",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "100",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2572,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2772,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "slow-request-deviation",
+													"description" : "Value (in ms) for the deviation from the current average response time, used for evaluation of slow inflight transactions. Also see 'slow-request-threshold' property for more details.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "3600",
+													"lowerNumericBound" : "10",
+													"defaultStringValue" : "200",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "200",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2573,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2773,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "api-transaction-timeout-in-seconds",
+													"description" : "Timeout value in seconds for global transactions initiated by appdynamics api. The endTransaction api  will be invoked after the specified timeout period. Default value is 15 seconds",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "3600",
+													"lowerNumericBound" : "1",
+													"defaultStringValue" : "300",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "300",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2574,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2774,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "api-thread-activity-timeout-in-seconds",
+													"description" : "Timeout value in seconds for threads participating in a global transaction added by appdynamics api.  The removeCurrentThread api will be invoked after the specified timeout period. Default value is 10 seconds",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "3600",
+													"lowerNumericBound" : "1",
+													"defaultStringValue" : "300",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "300",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2575,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2775,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-default-http-error-code-reporter",
+													"description" : "Disable/enable automatic HTTP error code reporting for error codes between 400 - 505, default TRUE.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "true",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "true",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2576,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2776,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "capture-error-urls",
+													"description" : "Disable/enable capturing the URLs causing HTTP errors. The URLs are reported as ERROR events every 15 minutes, viewable through Event Viewer. Default TRUE. JVM needs restart if re-transformation is not supported for the JVM version. ",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "true",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "true",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2577,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2777,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "end-to-end-message-latency-threshold-millis",
+													"description" : "Enable end to end message latency monitoring for distributed asynchronouse systems by setting up a threshold any message taking more than the threshold is viewable through Event Viewer.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : "36000",
+													"lowerNumericBound" : "0",
+													"defaultStringValue" : "0",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "0",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2578,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2778,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "async-transaction-demarcator",
+													"description" : "This Class Name/method name combination marks the end of an async distributed transaction \nUse the format ClassName/Method Name e.g. foo/bar where foo is class name and bar is method name",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2579,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2779,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "downstream-tx-detection-enabled",
+													"description" : "If the agent cannot reach the controller for a prolonged period, it turns off most services, and notifies the continuing tiers that upstream transaction was detected and is not being monitored. Defaults to false.Set this to true if you wish the continuing tiers to detect thier own transactions in the event of network failure on the upstream tiers.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2580,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2780,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "find-entry-points",
+													"description" : "When there is a chance that not all traffic/no traffic is being detected as business transactions, turn this flag on to log all potential entry points that are hitting instrumented exit points or loggers to the BusinessTransactions log file.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2581,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2781,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "log-request-payload",
+													"description" : "Turn this on to log request payload(HTTP parameters/cookies/session keys etc) as part of a request snapshot. ",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2582,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2782,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "rest-transaction-naming",
+													"description" : "Controls how JAX-RS transactions are named. Does not need a restart ",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "{class-annotation}/{method-annotation}.{http-method}",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "{class-annotation}/{method-annotation}.{http-method}",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2583,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2783,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "rest-uri-segment-scheme",
+													"description" : "Segment scheme to process the URI of JAX-RS transactions. Does not need a restart ",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "first-n-segments",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "first-n-segments",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2584,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2784,
+													"version" : 1,
+													"type" : "STRING",
+													"name" : "rest-num-segments",
+													"description" : "Number of segments to be used by rest-uri-segment-scheme. Does not need a restart ",
+													"required" : false,
+													"allowedStringValues" : [],
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "2",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "2",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2585,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2785,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-object-size-monitoring",
+													"description" : "Enables / Disables Object Size monitoring feature on this node. Doesn't need a restart for JVM version 1.6 upwards",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2586,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2786,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-instance-monitoring",
+													"description" : "Enables / Disables Instance tracking feature on this node. Doesn't need a JVM restart.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2587,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2787,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "enable-collection-monitoring",
+													"description" : "Enables / Disables Collection monitoring feature on this node. Feature available only on JVMs versions 1.6 upwards and requires restart.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : "false",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2588,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2788,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "minimum-size-for-evaluation-in-mb",
+													"description" : "Minimum initial size in mega bytes for a collection to qualify to show up in Automatic Leak Detection tab. The collection must also survive for the period specified in property [minimum-age-for-evaluation-in-minutes]. Default value is 5 MB. ",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : "1",
+													"defaultStringValue" : "5",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "5",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2589,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2789,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "minimum-age-for-evaluation-in-minutes",
+													"description" : "Minimum age of the collection in minutes to qualify the collection as a Automatic Leak Detection candidate. The property takes effect after node restart.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : "5",
+													"defaultStringValue" : "30",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "30",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2590,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2790,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "collection-capture-period-in-minutes",
+													"description" : "Total interval in minutes since server restart for which collections will be captured for leak evaluation. The property takes effect only after the node restart.",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : "5",
+													"defaultStringValue" : "30",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "30",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2591,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 2791,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "leak-diagnostic-interval-in-minutes",
+													"description" : "Interval at which diagnostic data (content summary and activity trace) will be captured for leaking collections",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : "2",
+													"defaultStringValue" : "30",
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "30",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2960,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 3160,
+													"version" : 0,
+													"type" : "INTEGER",
+													"name" : "max-discovered-backends",
+													"description" : "max-discovered-backends",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : null,
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "2000",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 2961,
+											"version" : 0,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 3161,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "thread-correlation",
+													"description" : "thread-correlation",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : null,
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "true",
+											"fileBinary" : null
+										}
+									], ["com.singularity.ee.controller.api.dto.Property", {
+											"id" : 3001,
+											"version" : 1,
+											"definition" : ["com.singularity.ee.controller.api.dto.PropertyDefinition", {
+													"id" : 3201,
+													"version" : 0,
+													"type" : "BOOLEAN",
+													"name" : "analytics-dynamic-service-enabled",
+													"description" : "",
+													"required" : false,
+													"allowedStringValues" : null,
+													"stringMaxLen" : 0,
+													"upperNumericBound" : null,
+													"lowerNumericBound" : null,
+													"defaultStringValue" : null,
+													"defaultFileBinary" : null
+												}
+											],
+											"stringValue" : "false",
+											"fileBinary" : null
+										}
+									]]],
+							"hierarchicalConfigKey" : ["com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+									"attachedEntity" : ["com.singularity.ee.controller.api.dto.EntityDefinition", {
+											"id" : 0,
+											"version" : 0,
+											"entityType" : "APPLICATION",
+											"entityId" : 6,
+											"prettyToString" : null
+										}
+									],
+									"agentType" : "DOT_NET_APP_AGENT"
+								}
+							]
+						}
+					]
+				}
+			]]],
+	"metatdata" : null
+}

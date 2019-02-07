@@ -1,0 +1,21 @@
+{
+  "controllerVersion" : "4.5.4",
+  "name" : "Microsoft Sharepoint",
+  "version" : "0.1",
+  "supportedCotsVersions": ["2010","2013","2016"],
+  "tags" : [ "microsoft", "dynamics", "crm" ],
+  "authors" : [ "Daniel Odievich" ],
+  "support": "author",
+  "image" : "logo.jpg",
+  "description": "A taco containing stuff to configure a dynamics crm in a controller",
+  "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/236290692/How+to+Instrument+and+Configure+SharePoint",
+  "product_link": "https://products.office.com/en-us/sharepoint/collaboration",
+  "ingredients" : [
+	  {"type": "appagent-properties", "order" : 0, "file" : "appagent-properties.json"},
+	  {"type": "backend-detection", "order" : 1, "file" : "backend-detection.json"},
+	  {"type": "exit-points", "order" : 2, "file" : "exit-points.json"},
+	  {"type": "data-collectors", "order" : 3, "file" : "data-collectors.json"},
+	  {"type": "eum-app-integration", "order" : 4, "file" : "eum-app-integration.json"},
+	  {"type": "browser-eum-config", "order" : 5, "file" : "browser-eum-config.json"}
+  ]
+}

@@ -1,0 +1,739 @@
+{
+  "controllerUrl" : "http://appdcntr42win.danielo.com:8090",
+  "applicationId" : 9,
+  "tierId" : 31,
+  "user" : "appdadmin",
+  "createdDate" : [ "java.util.Date", 1485993495465 ],
+  "entityType" : "service-endpoints",
+  "entities" : [ "java.util.ArrayList", [ [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 10,
+    "version" : 3,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "All Other Web Traffic",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 1,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\.(asmx|svc)",
+        "inverse" : true,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\.(asmx|svc)",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "All Other Web Traffic",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 5,
+    "version" : 0,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "CrmAction",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.poco.POCOMatchRule", {
+      "enabled" : true,
+      "priority" : 0,
+      "excluded" : false,
+      "matchClassType" : "MATCHES_CLASS",
+      "classMatch" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "Microsoft.Crm.Extensibility.ExternalMessageDispatcher",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "Microsoft.Crm.Extensibility.ExternalMessageDispatcher",
+        "regexGroups" : null
+      } ],
+      "methodMatch" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "Execute",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "Execute",
+        "regexGroups" : null
+      } ] ] ],
+      "splitOperationType" : 0,
+      "splitOperation" : null,
+      "excludes" : null,
+      "backgroundTask" : false,
+      "displayName" : "",
+      "splitConfig" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig", {
+        "splitOperationType" : 1,
+        "splitOperation" : "2"
+      } ] ] ]
+    } ],
+    "entryPointType" : "POCO",
+    "definitionName" : "CrmAction",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 8,
+    "version" : 3,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-AppHttpHandler",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\/AppWebServices\\/.*ashx.*",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\/AppWebServices\\/.*ashx.*",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-AppHttpHandler",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 11,
+    "version" : 3,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-AppWebService",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\/AppWebServices\\/.*.asmx.*",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\/AppWebServices\\/.*.asmx.*",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-AppWebService",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 14,
+    "version" : 1,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-Dashboard",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\/dashboards\\/dashboard.aspx",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\/dashboards\\/dashboard.aspx",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-Dashboard",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 15,
+    "version" : 1,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-Home_dashboards",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\/workplace\\/home_dashboards.aspx",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\/workplace\\/home_dashboards.aspx",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-Home_dashboards",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 12,
+    "version" : 1,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-Layout",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\/_forms\\/read\\/layout.aspx",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\/_forms\\/read\\/layout.aspx",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-Layout",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 17,
+    "version" : 1,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-List-All Other CRM",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\/_root\\/homepage.aspx",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\/_root\\/homepage.aspx",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-List-All Other CRM",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 13,
+    "version" : 4,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-Main",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\/main.aspx",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\/main.aspx",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-Main",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 16,
+    "version" : 2,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-Open-All Other CRM",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)\\/form\\/data.aspx",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)\\/form\\/data.aspx",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-Open-All Other CRM",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 23,
+    "version" : 1,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-Record-All Other CRM",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 10,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i)(\\/_forms\\/read\\/page.aspx|\\/userdefined\\/edit.aspx)",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i)(\\/_forms\\/read\\/page.aspx|\\/userdefined\\/edit.aspx)",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-Record-All Other CRM",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 9,
+    "version" : 1,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 31,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Web-WebResources",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.asp.ASPDotNetMatchRule", {
+      "enabled" : true,
+      "priority" : 20,
+      "excluded" : false,
+      "httpMethod" : null,
+      "className" : null,
+      "servletName" : null,
+      "uri" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "REGEX",
+        "matchPattern" : "(?i).*\\/WebResources\\/.*",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "REGEX",
+        "extendedMatchPattern" : "(?i).*\\/WebResources\\/.*",
+        "regexGroups" : null
+      } ],
+      "host" : null,
+      "port" : null,
+      "parameters" : null,
+      "cookies" : null,
+      "xpathExpressionConfig" : null,
+      "xmlJavaBindingConfig" : null,
+      "methodSplitConfig" : null,
+      "ruleProperties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "uri-suffix-scheme",
+        "value" : "uri-segment-number"
+      } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+        "id" : 0,
+        "version" : 0,
+        "name" : "suffix-key",
+        "value" : "1"
+      } ] ] ],
+      "headers" : null
+    } ],
+    "entryPointType" : "ASP_DOTNET",
+    "definitionName" : "Web-WebResources",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 31,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ] ] ],
+  "metatdata" : null
+}

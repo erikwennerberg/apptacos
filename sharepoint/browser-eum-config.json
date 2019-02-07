@@ -1,0 +1,771 @@
+{
+  "controllerUrl" : "http://localhost:8090",
+  "applicationId" : 5,
+  "tierId" : null,
+  "user" : "admin",
+  "createdDate" : [ "java.util.Date", 1501064565035 ],
+  "entityType" : "browser-eum-config",
+  "entities" : [ "java.util.ArrayList", [ [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 3,
+    "version" : 0,
+    "name" : "Instrumentation - Base Page & iFrames",
+    "nameUnique" : true,
+    "type" : "INSTR_BASE_PAGE_IFRAME",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.PagesIFramesConfigData", {
+      "customNamingIncludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.OfficeOnlineDocumentRender",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/(_layouts\\/.*\\/WopiFrame.aspx|WopiFrame2.aspx|_vti_bin\\/wopi\\.ashx|_vti_bin\\/ExcelRest\\.aspx).*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.Search",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/(osssearchresults|search\\/.*\\/.*results)\\.aspx.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.Upload",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*\\/(Upload|UploadEx)\\.aspx.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "ClientOM.Query",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/client\\.svc\\/processquery.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "ClientOM.RESTQuery",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_api\\/.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.Application",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/(_layouts|_login|_windows|_admin|_vti_bin)\\/.*\\.aspx.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.WebHandlers",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*(\\.ashx|metadata\\/json).*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.JavaScripts",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*\\.js.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.RemoteRPC",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/owssvr\\.dll.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "WebServices.*",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/.*\\.asmx.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : true,
+          "type" : "REGEX_GROUP",
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : [ "com.appdynamics.eumcloud.configuration.dto.EUMCloudRegexGroupConfig", {
+            "regexp" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/(.*\\.asmx).*",
+            "groups" : [ 1 ]
+          } ],
+          "domainNameType" : null,
+          "queryStringMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.JSONServices",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/.*\\.json.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.Content",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 5,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/.*\\.aspx.*"
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : null,
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2147483647,
+        "matchOnURL" : null,
+        "isDefault" : true,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : true,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : "FIRST_N_SEGMENTS",
+          "anchorType" : null,
+          "urlMatchSegments" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.URLMatchSegmentConfig", {
+            "firstNSegments" : 5,
+            "lastNSegments" : 0,
+            "segmentNumbers" : null
+          } ],
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ] ] ],
+      "customNamingExcludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ExcludeRule", {
+        "name" : "Pages.*.axd",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 0,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/(ScriptResource\\.axd|WebResource\\.axd).*"
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ExcludeRule", {
+        "name" : "Pages.*.themable",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 0,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*\\/styles\\/themable.*"
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ExcludeRule", {
+        "name" : "Pages.*.css",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 0,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.BasePageURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*\\/.*\\.css.*"
+        } ]
+      } ] ] ]
+    } ]
+  } ], [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 4,
+    "version" : 0,
+    "name" : "Instrumentation - AJAX",
+    "nameUnique" : true,
+    "type" : "INSTR_AJAX",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.AJAXConfigData", {
+      "customNamingIncludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.OfficeOnlineDocumentRender",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/(_layouts\\/.*\\/WopiFrame.aspx|WopiFrame2.aspx|_vti_bin\\/wopi\\.ashx|_vti_bin\\/ExcelRest\\.aspx).*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.Search",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/(osssearchresults|search\\/.*\\/.*results)\\.aspx.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.Upload",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*\\/(Upload|UploadEx)\\.aspx.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "ClientOM.Query",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/client\\.svc\\/processquery.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "ClientOM.RESTQuery",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_api\\/.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.Application",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/(_layouts|_login|_windows|_admin|_vti_bin)\\/.*\\.aspx.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.WebHandlers",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*(\\.ashx|metadata\\/json).*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.JavaScripts",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*\\.js.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.RemoteRPC",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/owssvr\\.dll.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "WebServices.*",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/.*\\.asmx.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : false,
+          "useRegex" : true,
+          "type" : "REGEX_GROUP",
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : [ "com.appdynamics.eumcloud.configuration.dto.EUMCloudRegexGroupConfig", {
+            "regexp" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/(.*\\.asmx).*",
+            "groups" : [ 1 ]
+          } ],
+          "domainNameType" : null,
+          "queryStringMatch" : null,
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.JSONServices",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 3,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_vti_bin\\/.*\\.json.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : "Pages.Content",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 5,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/.*\\.aspx.*",
+          "httpMethods" : null
+        } ],
+        "isDefault" : false,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : null,
+          "anchorType" : null,
+          "urlMatchSegments" : null,
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : null,
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2147483647,
+        "matchOnURL" : null,
+        "isDefault" : true,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : true,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : "FIRST_N_SEGMENTS",
+          "anchorType" : null,
+          "urlMatchSegments" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.URLMatchSegmentConfig", {
+            "firstNSegments" : 5,
+            "lastNSegments" : 0,
+            "segmentNumbers" : null
+          } ],
+          "anchorMatchSegments" : null,
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_FULL_DOMAIN",
+          "queryStringMatch" : [ ],
+          "useHttpMethod" : false,
+          "postParamsMatch" : null
+        } ]
+      } ] ] ],
+      "customNamingExcludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ExcludeRule", {
+        "name" : "Pages.*.axd",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 0,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/(ScriptResource\\.axd|WebResource\\.axd).*",
+          "httpMethods" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ExcludeRule", {
+        "name" : "Pages.*.themable",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 0,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*\\/styles\\/themable.*",
+          "httpMethods" : null
+        } ]
+      } ], [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.ExcludeRule", {
+        "name" : "Pages.*.css",
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 0,
+        "matchOnURL" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.AjaxURLMatchCriteria", {
+          "type" : "REGEX",
+          "value" : "(?i)http.*:\\/\\/.*\\/_layouts\\/.*\\/.*\\.css.*",
+          "httpMethods" : null
+        } ]
+      } ] ] ],
+      "eventServiceIncludeRules" : [ "java.util.ArrayList", [ ] ],
+      "eventServiceExcludeRules" : [ "java.util.ArrayList", [ ] ]
+    } ]
+  } ], [ "com.appdynamics.tools.vo.BrowserEumConfig", {
+    "id" : 5,
+    "version" : 0,
+    "name" : "Instrumentation - Virtual Pages",
+    "nameUnique" : true,
+    "type" : "INSTR_VIRT_PAGES",
+    "config" : [ "com.appdynamics.ui.controllerWeb.dto.eum.web.configuration.VirtualPagesConfigData", {
+      "customNamingIncludeRules" : [ "java.util.ArrayList", [ [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.IncludeRule", {
+        "name" : null,
+        "matchOnMobileApplicationName" : null,
+        "enabled" : true,
+        "priority" : 2147483647,
+        "matchOnURL" : null,
+        "isDefault" : true,
+        "pageNamingConfig" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.VirtualPageIncludeNamingRuleCriteria", {
+          "useProtocol" : false,
+          "useDomainName" : false,
+          "useURL" : true,
+          "useRegex" : false,
+          "type" : "FIRST_N_SEGMENTS",
+          "anchorType" : "FIRST_N_SEGMENTS",
+          "urlMatchSegments" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.URLMatchSegmentConfig", {
+            "firstNSegments" : 1,
+            "lastNSegments" : 0,
+            "segmentNumbers" : null
+          } ],
+          "anchorMatchSegments" : [ "com.appdynamics.ui.controllerWeb.dto.eum.common.configuration.URLMatchSegmentConfig", {
+            "firstNSegments" : 2,
+            "lastNSegments" : 0,
+            "segmentNumbers" : null
+          } ],
+          "regexGroupConfig" : null,
+          "domainNameType" : "SHOW_SUB_DOMAIN",
+          "queryStringMatch" : [ ]
+        } ]
+      } ] ] ],
+      "customNamingExcludeRules" : [ "java.util.ArrayList", [ ] ]
+    } ]
+  } ] ] ],
+  "metatdata" : null
+}

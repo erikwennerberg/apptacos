@@ -1,0 +1,303 @@
+{
+	"controllerUrl" : "http://appdcntr42full:8090",
+	"applicationId" : 6,
+	"tierId" : null,
+	"user" : "appdadmin",
+	"createdDate" : ["java.util.Date", 1479257105407],
+	"entityType" : "backend-detection",
+    "entities": [
+        "java.util.ArrayList",
+        [
+            [
+                "com.appdynamics.tools.domain.BackendDetection",
+                {
+                    "id": -519391665,
+                    "version": 0,
+                    "name": "DOT_NET_APP_AGENT",
+                    "nameUnique": true,
+                    "agentType": "DOT_NET_APP_AGENT",
+                    "configs": [
+                        "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig;",
+                        [
+                            [
+                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig",
+                                {
+                                    "id": 259,
+                                    "version": 0,
+                                    "attachedEntity": [
+                                        "com.singularity.ee.controller.api.dto.EntityDefinition",
+                                        {
+                                            "id": 0,
+                                            "version": 0,
+                                            "entityType": "APPLICATION",
+                                            "entityId": 6,
+                                            "prettyToString": null
+                                        }
+                                    ],
+                                    "agentType": "DOT_NET_APP_AGENT",
+                                    "name": "Claims for Windows Token Service",
+                                    "discoveryConditions": [
+                                        "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;",
+                                        [
+                                            [
+                                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition",
+                                                {
+                                                    "id": 1,
+                                                    "version": 0,
+                                                    "identityName": "Remote Address",
+                                                    "match": [
+                                                        "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch",
+                                                        {
+                                                            "matchType": "REGEX",
+                                                            "matchPattern": "(?i).*\\/s4u\\/022694f3-9fbd-422b-b4b2-312e25dae2a2",
+                                                            "inverse": false,
+                                                            "inList": null,
+                                                            "extendedMatchType": "REGEX",
+                                                            "extendedMatchPattern": "(?i).*\\/s4u\\/022694f3-9fbd-422b-b4b2-312e25dae2a2",
+                                                            "regexGroups": null
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    ],
+                                    "identityOptions": [
+                                        "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;",
+                                        [
+                                            [
+                                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption",
+                                                {
+                                                    "id": 961,
+                                                    "version": 0,
+                                                    "name": "Remote Address",
+                                                    "namingOptions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [
+                                                            [
+                                                                "com.singularity.ee.controller.api.dto.NameValuePair",
+                                                                {
+                                                                    "id": 6857,
+                                                                    "version": 0,
+                                                                    "name": "use-entire-string",
+                                                                    "value": "true"
+                                                                }
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    "namingActions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [ ]
+                                                    ],
+                                                    "enabled": false,
+                                                    "hashValueDetermined": false,
+                                                    "hashValue": 0
+                                                }
+                                            ],
+                                            [
+                                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption",
+                                                {
+                                                    "id": 962,
+                                                    "version": 0,
+                                                    "name": "OperationContract",
+                                                    "namingOptions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [
+                                                            [
+                                                                "com.singularity.ee.controller.api.dto.NameValuePair",
+                                                                {
+                                                                    "id": 6858,
+                                                                    "version": 0,
+                                                                    "name": "use-entire-string",
+                                                                    "value": "true"
+                                                                }
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    "namingActions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [ ]
+                                                    ],
+                                                    "enabled": false,
+                                                    "hashValueDetermined": false,
+                                                    "hashValue": 0
+                                                }
+                                            ],
+                                            [
+                                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption",
+                                                {
+                                                    "id": 963,
+                                                    "version": 0,
+                                                    "name": "ServiceContract",
+                                                    "namingOptions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [
+                                                            [
+                                                                "com.singularity.ee.controller.api.dto.NameValuePair",
+                                                                {
+                                                                    "id": 6859,
+                                                                    "version": 0,
+                                                                    "name": "use-entire-string",
+                                                                    "value": "true"
+                                                                }
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    "namingActions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [ ]
+                                                    ],
+                                                    "enabled": true,
+                                                    "hashValueDetermined": false,
+                                                    "hashValue": 0
+                                                }
+                                            ],
+                                            [
+                                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption",
+                                                {
+                                                    "id": 964,
+                                                    "version": 0,
+                                                    "name": "URL",
+                                                    "namingOptions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [
+                                                            [
+                                                                "com.singularity.ee.controller.api.dto.NameValuePair",
+                                                                {
+                                                                    "id": 6860,
+                                                                    "version": 0,
+                                                                    "name": "use-entire-string",
+                                                                    "value": "true"
+                                                                }
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    "namingActions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [ ]
+                                                    ],
+                                                    "enabled": false,
+                                                    "hashValueDetermined": false,
+                                                    "hashValue": 0
+                                                }
+                                            ],
+                                            [
+                                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption",
+                                                {
+                                                    "id": 965,
+                                                    "version": 0,
+                                                    "name": "Host",
+                                                    "namingOptions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [
+                                                            [
+                                                                "com.singularity.ee.controller.api.dto.NameValuePair",
+                                                                {
+                                                                    "id": 6861,
+                                                                    "version": 0,
+                                                                    "name": "use-entire-string",
+                                                                    "value": "true"
+                                                                }
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    "namingActions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [ ]
+                                                    ],
+                                                    "enabled": true,
+                                                    "hashValueDetermined": false,
+                                                    "hashValue": 0
+                                                }
+                                            ],
+                                            [
+                                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption",
+                                                {
+                                                    "id": 966,
+                                                    "version": 0,
+                                                    "name": "Port",
+                                                    "namingOptions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [
+                                                            [
+                                                                "com.singularity.ee.controller.api.dto.NameValuePair",
+                                                                {
+                                                                    "id": 6862,
+                                                                    "version": 0,
+                                                                    "name": "use-entire-string",
+                                                                    "value": "true"
+                                                                }
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    "namingActions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [ ]
+                                                    ],
+                                                    "enabled": false,
+                                                    "hashValueDetermined": false,
+                                                    "hashValue": 0
+                                                }
+                                            ],
+                                            [
+                                                "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption",
+                                                {
+                                                    "id": 967,
+                                                    "version": 0,
+                                                    "name": "Soap Action",
+                                                    "namingOptions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [
+                                                            [
+                                                                "com.singularity.ee.controller.api.dto.NameValuePair",
+                                                                {
+                                                                    "id": 6863,
+                                                                    "version": 0,
+                                                                    "name": "use-entire-string",
+                                                                    "value": "true"
+                                                                }
+                                                            ]
+                                                        ]
+                                                    ],
+                                                    "namingActions": [
+                                                        "[Lcom.singularity.ee.controller.api.dto.NameValuePair;",
+                                                        [ ]
+                                                    ],
+                                                    "enabled": false,
+                                                    "hashValueDetermined": false,
+                                                    "hashValue": 0
+                                                }
+                                            ]
+                                        ]
+                                    ],
+                                    "discoveryEnabled": true,
+                                    "correlationEnabled": true,
+                                    "supportsCorrelation": true,
+                                    "priority": 10,
+                                    "exitPointType": "WCF",
+                                    "exitPointSubType": "WCF",
+                                    "hierarchicalConfigKey": [
+                                        "com.singularity.ee.controller.api.dto.HierarchicalConfigKey",
+                                        {
+                                            "attachedEntity": [
+                                                "com.singularity.ee.controller.api.dto.EntityDefinition",
+                                                {
+                                                    "id": 0,
+                                                    "version": 0,
+                                                    "entityType": "APPLICATION",
+                                                    "entityId": 6,
+                                                    "prettyToString": null
+                                                }
+                                            ],
+                                            "agentType": "DOT_NET_APP_AGENT"
+                                        }
+                                    ]
+                                }
+                            ]
+                        ]
+                    ]
+                }
+            ]
+        ]
+    ],
+	"metatdata" : null
+}

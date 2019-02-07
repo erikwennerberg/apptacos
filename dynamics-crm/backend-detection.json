@@ -1,0 +1,3310 @@
+{
+  "controllerUrl" : "http://appdcntr42win.danielo.com:8090",
+  "applicationId" : 9,
+  "tierId" : null,
+  "user" : "appdadmin",
+  "createdDate" : [ "java.util.Date", 1485992063448 ],
+  "entityType" : "backend-detection",
+  "entities" : [ "java.util.ArrayList", [ [ "com.appdynamics.tools.domain.BackendDetection", {
+    "id" : -519391665,
+    "version" : 0,
+    "name" : "DOT_NET_APP_AGENT",
+    "nameUnique" : true,
+    "agentType" : "DOT_NET_APP_AGENT",
+    "configs" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1119,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Azure ACS OAuth CloudSync",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 1,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)login.windows.net",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)login.windows.net",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4481,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19740,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4482,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19741,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4483,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19742,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4484,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19743,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1120,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Azure ACS OAuth-accounts",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 2,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)accounts.accesscontrol.windows.net",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)accounts.accesscontrol.windows.net",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4485,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19744,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4486,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19745,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4487,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19746,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4488,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19747,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 20,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1121,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Azure ACS OAuth-allothers",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 3,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i).*.accesscontrol.windows.net",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i).*.accesscontrol.windows.net",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4489,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19751,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19748,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*.(accesscontrol.windows.net)"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19749,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19750,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4490,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19752,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4491,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19756,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19753,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i)https:\\/\\/.*.(accesscontrol.windows.net)\\/.*"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19754,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19755,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4492,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19757,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1122,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Azure ACS WRAP-allothers",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 4,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i).*-sb.accesscontrol.windows.net",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i).*-sb.accesscontrol.windows.net",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4493,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19761,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19758,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*(sb.accesscontrol.windows.net)"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19759,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19760,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4494,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19762,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4495,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19766,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19763,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*(\\/WRAPV0.9\\/)"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19764,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19765,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4496,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19767,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 20,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1124,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Azure AD Graph",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 6,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)graph.windows.net",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)graph.windows.net",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4501,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19775,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4502,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19776,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4503,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19780,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19777,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i)https:\\/\\/(graph.windows.net)\\/.*"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19778,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19779,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4504,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19781,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1127,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Azure Service Bus",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 9,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i).*.servicebus.windows.net",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i).*.servicebus.windows.net",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4516,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19799,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19796,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*.(servicebus.windows.net)"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19797,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19798,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4517,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19800,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4518,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19804,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19801,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*\\/\\/.*.(servicebus.windows.net)\\/.*"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19802,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19803,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4519,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19805,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1128,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Azure Service Bus WCF",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 10,
+        "version" : 0,
+        "identityName" : "Remote Address",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)https:\\/\\/.*.servicebus.windows.net.*\\/.*",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)https:\\/\\/.*.servicebus.windows.net.*\\/.*",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4520,
+        "version" : 1,
+        "name" : "Remote Address",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19809,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19806,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i)https:\\/\\/.*.(servicebus.windows.net).*\\/.*"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19807,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19808,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4521,
+        "version" : 1,
+        "name" : "OperationContract",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19810,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4522,
+        "version" : 1,
+        "name" : "ServiceContract",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19811,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4523,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19812,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4524,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19813,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4525,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19814,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4526,
+        "version" : 1,
+        "name" : "Soap Action",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19815,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "WCF",
+      "exitPointSubType" : "WCF",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1129,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Azure Service Bus Webstream",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 11,
+        "version" : 0,
+        "identityName" : "URL",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)http:\\/\\/.*\\/\\$servicebus\\/webstream\\/.*",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)http:\\/\\/.*\\/\\$servicebus\\/webstream\\/.*",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4527,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19816,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4528,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19817,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4529,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19821,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19818,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i)http:\\/\\/.*(\\/\\$servicebus\\/webstream)\\/.*"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19819,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19820,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4530,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19822,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1132,
+      "version" : 2,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Customer Database",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 14,
+        "version" : 0,
+        "identityName" : "Database",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i).*_mscrm$",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i).*_mscrm$",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4539,
+        "version" : 2,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19999,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4540,
+        "version" : 2,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20000,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4541,
+        "version" : 2,
+        "name" : "Database",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20001,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4542,
+        "version" : 2,
+        "name" : "Vendor",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20002,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4543,
+        "version" : 2,
+        "name" : "ConnectionString",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20003,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : false,
+      "supportsCorrelation" : false,
+      "priority" : 10,
+      "exitPointType" : "ADODOTNET",
+      "exitPointSubType" : "ADODOTNET",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 361,
+      "version" : 2,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Default .NET HTTP configuration",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4544,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19836,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4545,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19837,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4546,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19840,
+          "version" : 0,
+          "name" : "use-segments",
+          "value" : "true"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19841,
+          "version" : 0,
+          "name" : "split-delimiter",
+          "value" : "/"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19842,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "/"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19838,
+          "version" : 0,
+          "name" : "segment-type",
+          "value" : "first-n"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19839,
+          "version" : 0,
+          "name" : "segment-count",
+          "value" : "2"
+        } ] ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4547,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19843,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 0,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 364,
+      "version" : 2,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Default .NET JMS configuration",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4548,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19844,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4549,
+        "version" : 1,
+        "name" : "Destination",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19845,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4550,
+        "version" : 1,
+        "name" : "DestinationType",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19846,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4551,
+        "version" : 1,
+        "name" : "Vendor",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19847,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 0,
+      "exitPointType" : "JMS",
+      "exitPointSubType" : "JMS",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 366,
+      "version" : 2,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Default .NET Remoting configuration",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4552,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19848,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 0,
+      "exitPointType" : "DOTNETRemoting",
+      "exitPointSubType" : "DOTNETRemoting",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 365,
+      "version" : 2,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Default .NET WCF configuration",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4553,
+        "version" : 1,
+        "name" : "Remote Address",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19849,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4554,
+        "version" : 1,
+        "name" : "OperationContract",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19850,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4555,
+        "version" : 1,
+        "name" : "ServiceContract",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19851,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4556,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19852,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4557,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19853,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4558,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19854,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4559,
+        "version" : 1,
+        "name" : "Soap Action",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19855,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 0,
+      "exitPointType" : "WCF",
+      "exitPointSubType" : "WCF",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 363,
+      "version" : 2,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Default .NET WebService configuration",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4560,
+        "version" : 1,
+        "name" : "Service",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19856,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4561,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19857,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4562,
+        "version" : 1,
+        "name" : "Operation",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19858,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4563,
+        "version" : 1,
+        "name" : "Soap Action",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19859,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 0,
+      "exitPointType" : "WEB_SERVICE",
+      "exitPointSubType" : "WEB_SERVICE",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 362,
+      "version" : 3,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Default ADO.NET configuration",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4564,
+        "version" : 2,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20019,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4565,
+        "version" : 2,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20020,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4566,
+        "version" : 2,
+        "name" : "Database",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20021,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4567,
+        "version" : 2,
+        "name" : "Vendor",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20022,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4568,
+        "version" : 2,
+        "name" : "ConnectionString",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 20023,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : false,
+      "supportsCorrelation" : false,
+      "priority" : 0,
+      "exitPointType" : "ADODOTNET",
+      "exitPointSubType" : "ADODOTNET",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 367,
+      "version" : 2,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Default MongoDB configuration",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4569,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19865,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4570,
+        "version" : 1,
+        "name" : "Database",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19866,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4571,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19867,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : false,
+      "supportsCorrelation" : false,
+      "priority" : 0,
+      "exitPointType" : "CUSTOM",
+      "exitPointSubType" : "Mongo DB",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1134,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Exchange Autodiscovery Service",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 16,
+        "version" : 0,
+        "identityName" : "URL",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)(http|https):\\/\\/.*\\/autodiscover\\/autodiscover\\.(xml|svc)",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)(http|https):\\/\\/.*\\/autodiscover\\/autodiscover\\.(xml|svc)",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4579,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19878,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4580,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19879,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4581,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19883,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19880,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*(\\/autodiscover\\/autodiscover).*"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19881,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19882,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4582,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19884,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1135,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Exchange Web Services",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 17,
+        "version" : 0,
+        "identityName" : "URL",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)https:\\/\\/.*\\/ews\\/exchange.asmx",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)https:\\/\\/.*\\/ews\\/exchange.asmx",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4583,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19885,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4584,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19889,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19886,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(notgoingtomatch)"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19887,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19888,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : ""
+        } ] ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4585,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19893,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19890,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*(\\/ews\\/exchange.asmx).*"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19891,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19892,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4586,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19894,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1136,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Go.Microsoft.Com",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 18,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)go.microsoft.com",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)go.microsoft.com",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4587,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19895,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4588,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19896,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4589,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19897,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4590,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19898,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1138,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "MSCRM_Config",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 20,
+        "version" : 0,
+        "identityName" : "Database",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)mscrm_config",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)mscrm_config",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4595,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19906,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4596,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19907,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4597,
+        "version" : 1,
+        "name" : "Database",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19908,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4598,
+        "version" : 1,
+        "name" : "Vendor",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19909,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4599,
+        "version" : 1,
+        "name" : "ConnectionString",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19910,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : false,
+      "supportsCorrelation" : false,
+      "priority" : 10,
+      "exitPointType" : "ADODOTNET",
+      "exitPointSubType" : "ADODOTNET",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1139,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "NetTcp Port Sharing",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 21,
+        "version" : 0,
+        "identityName" : "Remote Address",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)net.pipe:\\/\\/nettcpportsharing\\/.*",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)net.pipe:\\/\\/nettcpportsharing\\/.*",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4600,
+        "version" : 1,
+        "name" : "Remote Address",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19911,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4601,
+        "version" : 1,
+        "name" : "OperationContract",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19912,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4602,
+        "version" : 1,
+        "name" : "ServiceContract",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19913,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4603,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19914,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4604,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19915,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4605,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19916,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4606,
+        "version" : 1,
+        "name" : "Soap Action",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19917,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "WCF",
+      "exitPointSubType" : "WCF",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1140,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "OneNote Online Services",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 22,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)onenote.officeapps.live.com",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)onenote.officeapps.live.com",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4607,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19918,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4608,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19919,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4609,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19920,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4610,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19921,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1141,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "PinPoint Services",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 23,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)(pinpoint|ppv1).microsoft.com",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)(pinpoint|ppv1).microsoft.com",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4611,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19922,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4612,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19923,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4613,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19924,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4614,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19925,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1142,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Reporting Service Report",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 24,
+        "version" : 0,
+        "identityName" : "URL",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)http:\\/\\/(.*)\\/reportserver.*",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)http:\\/\\/(.*)\\/reportserver.*",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4615,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19926,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4616,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19927,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4617,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19928,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4618,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19929,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1143,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Reporting Service Web Services",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 25,
+        "version" : 0,
+        "identityName" : "URL",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i).*\\/\\/.*\\/reportserver\\/report.*",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i).*\\/\\/.*\\/reportserver\\/report.*",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4619,
+        "version" : 1,
+        "name" : "Service",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19930,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4620,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19934,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19931,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i)http:\\/\\/(.*)\\/reportserver\\/report.*.asmx.*"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19932,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19933,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4621,
+        "version" : 1,
+        "name" : "Operation",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19935,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4622,
+        "version" : 1,
+        "name" : "Soap Action",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19936,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "WEB_SERVICE",
+      "exitPointSubType" : "WEB_SERVICE",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1145,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Sandbox Worker",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 28,
+        "version" : 0,
+        "identityName" : "Remote Address",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)net.pipe:\\/\\/localhost\\/crmsandboxworker-.*",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)net.pipe:\\/\\/localhost\\/crmsandboxworker-.*",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4627,
+        "version" : 1,
+        "name" : "Remote Address",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19944,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4628,
+        "version" : 1,
+        "name" : "OperationContract",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19945,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4629,
+        "version" : 1,
+        "name" : "ServiceContract",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19946,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4630,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19947,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4631,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19948,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4632,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19949,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4633,
+        "version" : 1,
+        "name" : "Soap Action",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19950,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "WCF",
+      "exitPointSubType" : "WCF",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1148,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "SharePoint Customer Client Side OM",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 33,
+        "version" : 0,
+        "identityName" : "URL",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i).*_vti_bin\\/client.svc\\/processquery",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i).*_vti_bin\\/client.svc\\/processquery",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4644,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19967,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4645,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19968,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4646,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19972,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19969,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*_vti_bin\\/(client.svc)\\/processquery"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19970,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19971,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4647,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19973,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1149,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "SharePoint Customer Web Services",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 34,
+        "version" : 0,
+        "identityName" : "URL",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i).*(_layouts|_vti_bin)\\/.*.asmx",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i).*(_layouts|_vti_bin)\\/.*.asmx",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4648,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19974,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4649,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19975,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4650,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19979,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19976,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*\\/(.*.asmx)"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19977,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19978,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4651,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19980,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1150,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "SharePoint Online Web Services",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 35,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i).*.sharepoint.com",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i).*.sharepoint.com",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4652,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19984,
+          "version" : 0,
+          "name" : "use-regexp",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19981,
+          "version" : 0,
+          "name" : "regexp",
+          "value" : "(?i).*.(sharepoint.com)"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19982,
+          "version" : 0,
+          "name" : "regexp-groups",
+          "value" : "1"
+        } ], [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19983,
+          "version" : 0,
+          "name" : "merge-delimiter",
+          "value" : "-"
+        } ] ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4653,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19985,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4654,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19986,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4655,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19987,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 20,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryConfig", {
+      "id" : 1152,
+      "version" : 1,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "name" : "Yammer API",
+      "discoveryConditions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendDiscoveryCondition", {
+        "id" : 37,
+        "version" : 0,
+        "identityName" : "Host",
+        "match" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+          "matchType" : "REGEX",
+          "matchPattern" : "(?i)www.yammer.com",
+          "inverse" : false,
+          "inList" : null,
+          "extendedMatchType" : "REGEX",
+          "extendedMatchPattern" : "(?i)www.yammer.com",
+          "regexGroups" : null
+        } ]
+      } ] ] ],
+      "identityOptions" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4660,
+        "version" : 1,
+        "name" : "Host",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19995,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4661,
+        "version" : 1,
+        "name" : "Port",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19996,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : true,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4662,
+        "version" : 1,
+        "name" : "URL",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19997,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.BackendIdentityOption", {
+        "id" : 4663,
+        "version" : 1,
+        "name" : "Query String",
+        "namingOptions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ [ "com.singularity.ee.controller.api.dto.NameValuePair", {
+          "id" : 19998,
+          "version" : 0,
+          "name" : "use-entire-string",
+          "value" : "true"
+        } ] ] ],
+        "namingActions" : [ "[Lcom.singularity.ee.controller.api.dto.NameValuePair;", [ ] ],
+        "enabled" : false,
+        "hashValue" : 0,
+        "hashValueDetermined" : false
+      } ] ] ],
+      "discoveryEnabled" : true,
+      "correlationEnabled" : true,
+      "supportsCorrelation" : true,
+      "priority" : 10,
+      "exitPointType" : "HTTP",
+      "exitPointSubType" : "HTTP",
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ] ] ]
+  } ] ] ],
+  "metatdata" : null
+}

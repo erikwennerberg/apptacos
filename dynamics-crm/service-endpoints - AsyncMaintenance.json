@@ -1,0 +1,245 @@
+{
+  "controllerUrl" : "http://appdcntr42win.danielo.com:8090",
+  "applicationId" : 9,
+  "tierId" : 91,
+  "user" : "appdadmin",
+  "createdDate" : [ "java.util.Date", 1485993566043 ],
+  "entityType" : "service-endpoints",
+  "entities" : [ "java.util.ArrayList", [ [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 26,
+    "version" : 0,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 91,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Async-Op",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.poco.POCOMatchRule", {
+      "enabled" : false,
+      "priority" : 0,
+      "excluded" : false,
+      "matchClassType" : "INHERITS_FROM_CLASS",
+      "classMatch" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "Microsoft.Crm.Asynchronous.AsyncEventHandlerCommand",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "Microsoft.Crm.Asynchronous.AsyncEventHandlerCommand",
+        "regexGroups" : null
+      } ],
+      "methodMatch" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "InternalExecute",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "InternalExecute",
+        "regexGroups" : null
+      } ] ] ],
+      "splitOperationType" : 0,
+      "splitOperation" : null,
+      "excludes" : null,
+      "backgroundTask" : false,
+      "displayName" : "",
+      "splitConfig" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig", {
+        "splitOperationType" : 1,
+        "splitOperation" : "0.OrganizationConfiguration.OrganizationName"
+      } ], [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig", {
+        "splitOperationType" : 4,
+        "splitOperation" : ""
+      } ] ] ]
+    } ],
+    "entryPointType" : "POCO",
+    "definitionName" : "Async-Op",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 91,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 24,
+    "version" : 1,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 91,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Async-Op.IndexManagementOperation",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.poco.POCOMatchRule", {
+      "enabled" : true,
+      "priority" : 0,
+      "excluded" : false,
+      "matchClassType" : "MATCHES_CLASS",
+      "classMatch" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "Microsoft.Crm.Asynchronous.IndexManagementOperation",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "Microsoft.Crm.Asynchronous.IndexManagementOperation",
+        "regexGroups" : null
+      } ],
+      "methodMatch" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "InternalExecute",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "InternalExecute",
+        "regexGroups" : null
+      } ] ] ],
+      "splitOperationType" : 0,
+      "splitOperation" : null,
+      "excludes" : null,
+      "backgroundTask" : false,
+      "displayName" : "",
+      "splitConfig" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig", {
+        "splitOperationType" : 1,
+        "splitOperation" : "0.OrganizationConfiguration.OrganizationName"
+      } ] ] ]
+    } ],
+    "entryPointType" : "POCO",
+    "definitionName" : "Async-Op.IndexManagementOperation",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 91,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 25,
+    "version" : 1,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 91,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "Async-Op.ReindexAllOperation",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.poco.POCOMatchRule", {
+      "enabled" : true,
+      "priority" : 0,
+      "excluded" : false,
+      "matchClassType" : "MATCHES_CLASS",
+      "classMatch" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "Microsoft.Crm.Asynchronous.ReindexAllOperation",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "Microsoft.Crm.Asynchronous.ReindexAllOperation",
+        "regexGroups" : null
+      } ],
+      "methodMatch" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "InternalExecute",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "InternalExecute",
+        "regexGroups" : null
+      } ] ] ],
+      "splitOperationType" : 0,
+      "splitOperation" : null,
+      "excludes" : null,
+      "backgroundTask" : false,
+      "displayName" : "",
+      "splitConfig" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig", {
+        "splitOperationType" : 1,
+        "splitOperation" : "0.OrganizationConfiguration.OrganizationName"
+      } ] ] ]
+    } ],
+    "entryPointType" : "POCO",
+    "definitionName" : "Async-Op.ReindexAllOperation",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 91,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ], [ "com.singularity.ee.controller.api.dto.serviceendpoint.ServiceEndpointDefinition", {
+    "id" : 4,
+    "version" : 0,
+    "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+      "id" : 0,
+      "version" : 0,
+      "entityType" : "APPLICATION_COMPONENT",
+      "entityId" : 91,
+      "prettyToString" : null
+    } ],
+    "agentType" : "DOT_NET_APP_AGENT",
+    "name" : "CrmAction",
+    "matchPointRule" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.dotnet.poco.POCOMatchRule", {
+      "enabled" : true,
+      "priority" : 0,
+      "excluded" : false,
+      "matchClassType" : "MATCHES_CLASS",
+      "classMatch" : [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "Microsoft.Crm.Extensibility.ExternalMessageDispatcher",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "Microsoft.Crm.Extensibility.ExternalMessageDispatcher",
+        "regexGroups" : null
+      } ],
+      "methodMatch" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.StringMatch", {
+        "matchType" : "EQUALS",
+        "matchPattern" : "Execute",
+        "inverse" : false,
+        "inList" : null,
+        "extendedMatchType" : "EQUALS",
+        "extendedMatchPattern" : "Execute",
+        "regexGroups" : null
+      } ] ] ],
+      "splitOperationType" : 0,
+      "splitOperation" : null,
+      "excludes" : null,
+      "backgroundTask" : false,
+      "displayName" : "",
+      "splitConfig" : [ "[Lcom.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig;", [ [ "com.singularity.ee.controller.api.dto.transactionmonitor.transactiondefinition.pojo.SplitConfig", {
+        "splitOperationType" : 1,
+        "splitOperation" : "2"
+      } ] ] ]
+    } ],
+    "entryPointType" : "POCO",
+    "definitionName" : "CrmAction",
+    "matchPointRuleXml" : null,
+    "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION_COMPONENT",
+        "entityId" : 91,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT"
+    } ]
+  } ] ] ],
+  "metatdata" : null
+}

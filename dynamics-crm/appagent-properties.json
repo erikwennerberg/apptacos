@@ -1,0 +1,270 @@
+{
+  "controllerUrl" : "http://appdcntr42win.danielo.com:8090",
+  "applicationId" : 9,
+  "tierId" : null,
+  "user" : "appdadmin",
+  "createdDate" : [ "java.util.Date", 1485993435948 ],
+  "entityType" : "appagent-properties",
+  "entities" : [ "java.util.ArrayList", [ [ "com.appdynamics.tools.vo.AppAgentPropConfig", {
+    "id" : -519391665,
+    "version" : 0,
+    "name" : "DOT_NET_APP_AGENT",
+    "nameUnique" : true,
+    "agentType" : "DOT_NET_APP_AGENT",
+    "configuration" : [ "com.singularity.ee.controller.api.dto.AgentConfiguration", {
+      "id" : 82,
+      "version" : 7,
+      "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+        "id" : 0,
+        "version" : 0,
+        "entityType" : "APPLICATION",
+        "entityId" : 9,
+        "prettyToString" : null
+      } ],
+      "agentType" : "DOT_NET_APP_AGENT",
+      "override" : true,
+      "timestamp" : 1485286273833,
+      "properties" : [ "[Lcom.singularity.ee.controller.api.dto.Property;", [ 
+      [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 4854,
+        "version" : 1,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 4254,
+          "version" : 0,
+          "type" : "INTEGER",
+          "name" : "max-jdbc-calls-per-callgraph",
+          "description" : "Maximum number of sql queries  that will be reported per callgraph. Note - Only queries taking more time than 'min-duration-for-jdbc-callsample' wil be reported. Does not need a restart",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : "1000",
+          "lowerNumericBound" : "1",
+          "defaultStringValue" : "100",
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "1000",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 4855,
+        "version" : 0,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 4255,
+          "version" : 0,
+          "type" : "INTEGER",
+          "name" : "max-jdbc-calls-per-snapshot",
+          "description" : "Maximum number of unique sql queries that will be reported per snapshot. Does not need a restart",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : "5000",
+          "lowerNumericBound" : "1",
+          "defaultStringValue" : "500",
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "1000",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 4858,
+        "version" : 1,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 4258,
+          "version" : 0,
+          "type" : "BOOLEAN",
+          "name" : "enable-soap-header-correlation",
+          "description" : "Disable/enable web service transaction correlation, default value is false, doesn't require restart",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : "false",
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "true",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 4868,
+        "version" : 1,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 4268,
+          "version" : 0,
+          "type" : "INTEGER",
+          "name" : "max-business-transactions",
+          "description" : "Number of business transactions discovered once an agent is started. This is done to prevent business transaction metric explosion as an unsuitable discovery scheme can potentially produce thousands of transactions, Default value is 50.",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : "300",
+          "lowerNumericBound" : null,
+          "defaultStringValue" : "50",
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "100",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 6000,
+        "version" : 0,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 5200,
+          "version" : 0,
+          "type" : "BOOLEAN",
+          "name" : "thread-correlation",
+          "description" : "thread-correlation",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : null,
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "true",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 14700,
+        "version" : 0,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 12700,
+          "version" : 0,
+          "type" : "INTEGER",
+          "name" : "max-service-end-points-per-thread",
+          "description" : "Maximum number of service endpoints that can defined on a single thread of transaction execution. If this property is set to the default value of one and there are two service endpoints defined that impact one specific transaction, at any point in time only the one service endpoint will be evaluated. If a second service endpoint is detected in context of the first one, the second is ignored. But, if the second service endpoint starts after the first one ends, the second service endpoint will be evaluated. Increase this property to monitor additional service endpoints on a thread. This number ensures a maximum limit on overhead and number of metrics due to service endpoints on each thread execution.",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : null,
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "15",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 14701,
+        "version" : 0,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 12701,
+          "version" : 0,
+          "type" : "INTEGER",
+          "name" : "max-service-end-points-per-node",
+          "description" : "Maximum total number of service endpoints that can be detected on a single node. Increasing the value of this property enables more service end points to be detected on a particular node. ",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : null,
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "500",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 14702,
+        "version" : 0,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 12702,
+          "version" : 0,
+          "type" : "INTEGER",
+          "name" : "max-service-end-points-per-entry-point-type",
+          "description" : "Maximum total number of service endpoints that can be registered for each entry point type, such as servlet, struts action, web service, and so on.",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : null,
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "500",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 14703,
+        "version" : 0,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 12703,
+          "version" : 0,
+          "type" : "INTEGER",
+          "name" : "max-service-end-points-per-agent",
+          "description" : "Maximum total number of service endpoints that can be detected for each agent.",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : null,
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "500",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 14704,
+        "version" : 0,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 12704,
+          "version" : 0,
+          "type" : "INTEGER",
+          "name" : "max-discovered-backends",
+          "description" : "This property specifies the maximum number of backends for the entire application, restricted by the agent (no restrictions enforced by the controller). This means that controller does not enforce any limits on the number of backends. It is an agent enforced limit. All agents know about all the backends registered in the system and can enforce the limit.",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : null,
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "2000",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 14705,
+        "version" : 1,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 12705,
+          "version" : 0,
+          "type" : "BOOLEAN",
+          "name" : "aspdotnet-mvc-naming-controlleraction",
+          "description" : "If set to true, this property configures the agent to identify ASP.NET MVC business transactions as Controller/Action.",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : null,
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "false",
+        "fileBinary" : null
+      } ], [ "com.singularity.ee.controller.api.dto.Property", {
+        "id" : 14707,
+        "version" : 0,
+        "definition" : [ "com.singularity.ee.controller.api.dto.PropertyDefinition", {
+          "id" : 12707,
+          "version" : 0,
+          "type" : "BOOLEAN",
+          "name" : "always-add-eum-metadata-in-http-headers",
+          "description" : "https://docs.appdynamics.com/display/PRO42/App+Agent+Node+Properties+Reference#AppAgentNodePropertiesReference-always-add-eum-metadata-in-http-headers",
+          "required" : false,
+          "allowedStringValues" : null,
+          "stringMaxLen" : 0,
+          "upperNumericBound" : null,
+          "lowerNumericBound" : null,
+          "defaultStringValue" : null,
+          "defaultFileBinary" : null
+        } ],
+        "stringValue" : "true",
+        "fileBinary" : null
+      } ] ] ],
+      "hierarchicalConfigKey" : [ "com.singularity.ee.controller.api.dto.HierarchicalConfigKey", {
+        "attachedEntity" : [ "com.singularity.ee.controller.api.dto.EntityDefinition", {
+          "id" : 0,
+          "version" : 0,
+          "entityType" : "APPLICATION",
+          "entityId" : 9,
+          "prettyToString" : null
+        } ],
+        "agentType" : "DOT_NET_APP_AGENT"
+      } ]
+    } ]
+  } ] ] ],
+  "metatdata" : null
+}
