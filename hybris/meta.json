@@ -13,7 +13,9 @@
   "settings": {
     "businessApplication": {"type": "application", "description": "The application containing the SAP Hybris environment", "default": "SAP Hybris"},
     "storeFrontTier": {"type": "tier", "description": "The name of the tier serving the store front of your hybris application", "default": "hybris-frontend"},
-    "backOfficeTier": {"type": "tier", "description": "The name of the tier serving the back office of your hybris application", "default": "hybris-backend"}
+    "backOfficeTier": {"type": "tier", "description": "The name of the tier serving the back office of your hybris application", "default": "hybris-backend"},
+    "color1": {"type": "color", "description": "A custom color for your business dashboards", "default": "#7962C8"},
+    "color2": {"type": "color", "description": "A custom color for your business dashboards", "default": "#6CC5CF"}
   },
   "ingredients" : [
 	  {"type": "scope", "order" : 0, "file" : "0-scopes.json"},
@@ -24,6 +26,7 @@
 	  {"type": "health-rules", "order" : 5, "file" : "5-health-rules"},
 	  {"type": "browser-eum-config", "order" : 6, "file" : "6-browser-eum-config"},
 	  {"type": "analytics-health-rules", "order" : 7, "file" : "7-analytics-health-rules"},
-	  {"type": "eum-app-integration", "order" : 8, "file" : "8-eum-app-integration"}
+	  {"type": "eum-app-integration", "order" : 8, "file" : "8-eum-app-integration"},
+    {"type": "dashboard", "order": 9, "file": "dashboards/leadership.json" }
   ]
 }
