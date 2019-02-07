@@ -6,11 +6,11 @@
   "tags" : [ "microsoft", "dynamics", "crm" ],
   "authors" : [ "Daniel Odievich" ],
   "support": "author",
-  "image" : "logo.png",
+  "image" : "logo.jpg",
   "description": "A taco containing stuff to configure a dynamics crm in a controller",
   "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/128681626/How+to+Instrument+and+Configure+Dynamics+CRM",
   "product_link": "https://dynamics.microsoft.com/en-us/crm/what-is-crm/",
   "ingredients" : [
-	  
+
   ]
 }
