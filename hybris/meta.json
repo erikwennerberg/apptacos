@@ -1,6 +1,6 @@
 {
   "controllerVersion" : "4.5.4",
-  "name" : "hybris",
+  "name" : "SAP Hybris",
   "version" : "0.1",
   "supportedCotsVersion": "6.1.0.3",
   "tags" : [ "hybris", "commerce", "sap" ],
