@@ -10,11 +10,11 @@
   "description": "A taco containing stuff to configure a Hybris app in a controller",
   "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/246841357/3.+AppDynamics+Configuration",
   "product_link": "http://www.hybris.com",
-  "settings": [
-    {"type": "application", "name": "businessApplication", "description": "The application containing the SAP Hybris environment", "default": "SAP Hybris"},
-    {"type": "tier", "name": "storeFrontTier", "description": "The name of the tier serving the store front of your hybris application", "default": "hybris-frontend"},
-    {"type": "tier", "name": "backOfficeTier", "description": "The name of the tier serving the back office of your hybris application", "default": "hybris-backend"}
-  ],
+  "settings": {
+    "businessApplication": {"type": "application", "description": "The application containing the SAP Hybris environment", "default": "SAP Hybris"},
+    "storeFrontTier": {"type": "tier", "description": "The name of the tier serving the store front of your hybris application", "default": "hybris-frontend"},
+    "backOfficeTier": {"type": "tier", "description": "The name of the tier serving the back office of your hybris application", "default": "hybris-backend"}
+  },
   "ingredients" : [
 	  {"type": "scope", "order" : 0, "file" : "0-scopes.json"},
 	  {"type": "rules", "order" : 1, "file" : "1-rules.json"},
