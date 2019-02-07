@@ -4,5 +4,19 @@
   "version" : "0.1",
   "supportedCotsVersion": "6.1.0.3",
   "tags" : [ "hybris", "commerce", "sap" ],
-  "authors" : [ "Severin Neumann" ]
+  "authors" : [ "Severin Neumann" ],
+  "image" : "hybris/logo.png",
+  "description: "A taco containing stuff to configure a Hybris app in a controller",
+  "internal_link" : "https://singularity.jira.com/wiki/spaces/SALESENG/pages/246841357/3.+AppDynamics+Configuration",
+  "ingredients" : [
+	  {"type": "scope", "order" : 0, "file" : "0-scopes.json"},
+	  {"type": "rules", "order" : 1, "file" : "1-rules.json"},
+	  {"type": "bt-config", "order" : 2, "file" : "2-bt-config"},
+	  {"type": "data-collectors", "order" : 3, "file" : "3-data-collectors"},
+	  {"type": "jmx-rules", "order" : 4, "file" : "4-jmx-rules"},
+	  {"type": "health-rules", "order" : 5, "file" : "5-health-rules"},
+	  {"type": "browser-eum-config", "order" : 6, "file" : "6-browser-eum-config"},
+	  {"type": "analytics-health-rules", "order" : 7, "file" : "7-analytics-health-rules"},
+	  {"type": "eum-app-integration", "order" : 8, "file" : "8-eum-app-integration"}
+  ]
 }
