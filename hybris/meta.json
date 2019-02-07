@@ -6,7 +6,7 @@
   "tags" : [ "hybris", "commerce", "sap" ],
   "authors" : [ "Severin Neumann" ],
   "support": "author",
-  "image" : "hybris/logo.png",
+  "image" : "logo.png",
   "description": "A taco containing stuff to configure a Hybris app in a controller",
   "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/246841357/3.+AppDynamics+Configuration",
   "product_link": "http://www.hybris.com",
