@@ -1,8 +1,8 @@
 {
-  "controllerVersion" : 4.5.4,
+  "controllerVersion" : "4.5.4",
   "name" : "hybris",
-  "version" : 0.1,
-  "supportedCotsVersion": 6.1.0.3,
+  "version" : "0.1",
+  "supportedCotsVersion": "6.1.0.3",
   "tags" : [ "hybris", "commerce", "sap" ],
   "authors" : [ "Severin Neumann" ]
 }
