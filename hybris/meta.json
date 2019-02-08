@@ -20,13 +20,13 @@
   "ingredients" : [
 	  {"type": "scope", "order" : 0, "file" : "0-scopes.json"},
 	  {"type": "rules", "order" : 1, "file" : "1-rules.json"},
-	  {"type": "bt-config", "order" : 2, "file" : "2-bt-config"},
-	  {"type": "data-collectors", "order" : 3, "file" : "3-data-collectors"},
-	  {"type": "jmx-rules", "order" : 4, "file" : "4-jmx-rules"},
-	  {"type": "health-rules", "order" : 5, "file" : "5-health-rules"},
-	  {"type": "browser-eum-config", "order" : 6, "file" : "6-browser-eum-config"},
-	  {"type": "analytics-health-rules", "order" : 7, "file" : "7-analytics-health-rules"},
-	  {"type": "eum-app-integration", "order" : 8, "file" : "8-eum-app-integration"},
+	  {"type": "bt-config", "order" : 2, "file" : "2-bt-config.json"},
+	  {"type": "data-collectors", "order" : 3, "file" : "3-data-collectors.json"},
+	  {"type": "jmx-rules", "order" : 4, "file" : "4-jmx-rules.json"},
+	  {"type": "health-rules", "order" : 5, "file" : "5-health-rules.json"},
+	  {"type": "browser-eum-config", "order" : 6, "file" : "6-browser-eum-config.json"},
+	  {"type": "analytics-health-rules", "order" : 7, "file" : "7-analytics-health-rules.json"},
+	  {"type": "eum-app-integration", "order" : 8, "file" : "8-eum-app-integration.json"},
     {"type": "dashboard", "order": 9, "file": "dashboards/leadership.json" }
   ]
 }
