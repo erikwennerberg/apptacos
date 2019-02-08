@@ -17,7 +17,8 @@
     "backOfficeTier": {"type": "tier", "description": "The name of the tier serving the back office of your hybris application", "default": "hybris-backend"},
     "color1": {"type": "color", "description": "A custom color for your business dashboards", "default": "#7962C8"},
     "color2": {"type": "color", "description": "A custom color for your business dashboards", "default": "#6CC5CF"},
-    "checkoutFlow": {"type": "select", "description": "Hybris provides different checkout flows, please choose the one you are using", "default": "multistep", "options": ["multistep", "onestep", "b2b"]}
+    "checkoutFlow": {"type": "select", "description": "Hybris provides different checkout flows, please choose the one you are using, so we can configure the right business transactions", "default": "multistep", "options": ["multistep", "onestep", "b2b"]},
+    "currencies": {"type": "select", "description": "Hybris supports multiple currencies. By default we collect metrics for $, € and £. If you only want one currency configured, please choose.", "default": "$, € and £", "options": ["$, € and £", "€ and £", "$ and £", "$ and €", "$", "€", "£"]}
   },
   "ingredients" : [
 	  {"type": "scope", "order" : 0, "file" : "0-scopes.json"},
