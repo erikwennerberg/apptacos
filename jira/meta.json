@@ -1,0 +1,12 @@
+{
+  "controllerVersion" : "4.5.4",
+  "name" : "Atlassian JIRA",
+  "version" : "0.1",
+  "supportedCotsVersions": ["7.12.3"],
+  "tags" : [ "jira", "atlassian", "java", "bug tracking" ],
+  "authors" : [ "Severin Neumann" ],
+  "support": "author",
+  "image" : "logo.png",
+  "description": "A taco containing stuff to configure JIRA in a controller",
+  "product_link": "https://www.atlassian.com/software/jira"
+}

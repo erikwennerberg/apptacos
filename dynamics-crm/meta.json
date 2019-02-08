@@ -3,7 +3,7 @@
   "name" : "Microsoft Dynamics CRM",
   "version" : "0.1",
   "supportedCotsVersions": ["7.0", "7.1", "8.0", "8.1"],
-  "tags" : [ "microsoft", "dynamics", "crm" ],
+  "tags" : [ "microsoft", "dynamics", "crm", ".net" ],
   "authors" : [ "Daniel Odievich" ],
   "support": "author",
   "image" : "logo.jpg",

@@ -3,7 +3,7 @@
   "name" : "SAP Hybris",
   "version" : "0.1",
   "supportedCotsVersions": ["6.1.0.3"],
-  "tags" : [ "hybris", "commerce", "sap" ],
+  "tags" : [ "hybris", "commerce", "sap", "java" ],
   "authors" : [ "Severin Neumann" ],
   "support": "author",
   "image" : "logo.png",

@@ -3,11 +3,11 @@
   "name" : "Microsoft Sharepoint",
   "version" : "0.1",
   "supportedCotsVersions": ["2010","2013","2016"],
-  "tags" : [ "microsoft", "dynamics", "crm" ],
+  "tags" : [ "microsoft", "sharepoint", ".net" ],
   "authors" : [ "Daniel Odievich" ],
   "support": "author",
   "image" : "logo.png",
-  "description": "A taco containing stuff to configure a dynamics crm in a controller",
+  "description": "A taco containing stuff to configure microsoft sharepoint in a controller",
   "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/236290692/How+to+Instrument+and+Configure+SharePoint",
   "product_link": "https://products.office.com/en-us/sharepoint/collaboration",
   "ingredients" : [
