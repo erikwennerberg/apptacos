@@ -1,8 +1,8 @@
 {
   "controllerVersion" : "4.5.4",
-  "name" : "Atlassian JIRA",
+  "name" : "Microsoft Sitecore CMS",
   "version" : "0.1",
-  "supportedCotsVersions": ["7.12.3"],
+  "supportedCotsVersions": ["7.5", "8.0", "8.5"],
   "tags" : [ ".net", "microsoft", "sitecore" ],
   "authors" : [ "Daniel Odievich" ],
   "support": "author",
