@@ -1,0 +1,13 @@
+{
+  "controllerVersion" : "4.5.4",
+  "name" : "Oracle PeopleSoft",
+  "version" : "0.1",
+  "supportedCotsVersions": [""],
+  "tags" : [ "oracle", "peoplesoft" ],
+  "authors" : [ "David Cohen" ],
+  "support": "author",
+  "image" : "logo.png",
+  "description": "A taco containing stuff to configure Oracle Peoplesoft in a controller",
+  "product_link": "https://www.oracle.com/de/applications/peoplesoft/",
+  "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/503185409/How+to+Instrument+and+Configure+PeopleSoft+with+AppDynamics"
+}

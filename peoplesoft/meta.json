@@ -1,0 +1,13 @@
+{
+  "controllerVersion" : "4.5.4",
+  "name" : "OpenStack",
+  "version" : "0.1",
+  "supportedCotsVersions": [""],
+  "tags" : [ "openstack" ],
+  "authors" : [ "Rajeev Govindan" ],
+  "support": "author",
+  "image" : "logo.png",
+  "description": "A taco containing stuff to configure OpenStack in a controller",
+  "product_link": "https://www.openstack.org/",
+  "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/374211193/Instrumenting+OpenStack+-+Getting+visibility+into+OpenStack+components"
+}
