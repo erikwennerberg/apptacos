@@ -6,7 +6,7 @@
   "tags" : [ "microsoft", "dynamics", "crm" ],
   "authors" : [ "Daniel Odievich" ],
   "support": "author",
-  "image" : "logo.jpg",
+  "image" : "logo.png",
   "description": "A taco containing stuff to configure a dynamics crm in a controller",
   "internal_link": "https://singularity.jira.com/wiki/spaces/SALESENG/pages/236290692/How+to+Instrument+and+Configure+SharePoint",
   "product_link": "https://products.office.com/en-us/sharepoint/collaboration",
