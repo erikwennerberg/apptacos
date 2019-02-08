@@ -1,0 +1,12 @@
+{
+  "controllerVersion" : "4.5.4",
+  "name" : "Cisco AppDynamics",
+  "version" : "0.1",
+  "supportedCotsVersions": ["4.5"],
+  "tags" : [ "cisco", "appdynamics", "java", "apm" ],
+  "authors" : [ "Severin Neumann" ],
+  "support": "vendor",
+  "image" : "logo.png",
+  "description": "Self-monitor an appdynamics platofrm including controller, events service & end user monitoring.",
+  "product_link": "https://www.appdynamics.com/"
+}
